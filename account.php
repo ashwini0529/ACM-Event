@@ -26,7 +26,13 @@ Hey, $loggedInUser->displayname. This is an example secure page designed to demo
 </div>
 <div id='bottom'></div>
 </div>
+
+
 </body>
 </html>";
+
+
+echo '<h3>Questions : </h3>';
+fetchQuestions();
 
 ?>

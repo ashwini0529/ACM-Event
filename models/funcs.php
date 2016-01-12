@@ -1205,4 +1205,37 @@ function addNewQuestion($questionTitle, $questionDescription, $questionMarks, $q
 	$stmt->close();
 	
 }
+
+// Function to fetch the questions..
+function fetchQuestions(){
+
+	global $mysqli,$db_table_prefix;
+	$stmt = $mysqli->prepare("SELECT 
+			id,
+			question_title,
+			question_description,
+			marks,
+			question_type,
+			user_id
+			FROM ".$db_table_prefix."questions
+			");
+		$stmt->execute();
+	$stmt->bind_result($id,$questionTitle,$questionDescription,$questionMarks,$questionType,$questionPostedBy);
+	while ($stmt->fetch()){
+
+		
+	echo '
+
+	<p>Question Title : '.$questionTitle.'</p><br>
+	<p>Question Description : '.$questionDescription.'</p><br>
+	<p>Question Marks : '.$questionMarks.'</p><br>
+	<p>Question Description : '.$questionType.'</p><br>
+	<p>Question Posted By : '.$questionPostedBy.'</p><br>
+	<p>------------------------------------------------------------------------------<br>
+
+
+	';
+}
+	$stmt->close();
+}
 ?>
