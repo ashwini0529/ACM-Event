@@ -14,8 +14,10 @@ if (isset($_POST['userId'])&&isset($_POST['marks'])) {
 	$questionId = $_POST['question_id'];
 	$marksAwarded = $_POST['marks'];
 	$marksAwardedBy = $_POST['whoAdded'];
-	addNewQuestion($questionTitle, $questionDescription, $questionMarks, $questionType,$whoAdded);
-	echo "Question Added Successfully..";
+	updateUserMarks($userId, $questionId,$marksAwarded,$marksAwardedBy);
+	$totalMarksOfUser = fetchTotalMarks($userId);
+	updateUserProfileMarks($totalMarksOfUser, $userId );
+	echo "Marks updated Successfully..";
 	# code...
 }
 
@@ -47,7 +49,7 @@ echo "
 <p>Marks Awarded : <input type = "text" name = "marks">	</p>
 
 <input type = "hidden" name = "whoAdded" value = " <?php echo $loggedInUser->user_id; ?> ">
-<p>Question Type : <input type = "text" name = "type">	<input type = "submit" value = "Add Question">
+<p><input type = "submit" value = "Update Marks">
 
 </p>
 </form>

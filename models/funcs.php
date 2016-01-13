@@ -1320,4 +1320,71 @@ function letsBuildUserDashboard($id)
 	$stmt->close();
 	
 }
+
+// Function to update marks of any user for any question...
+function updateUserMarks($userId,$questionId,$marksAwarded,$marksAwardedBy){
+	 global $mysqli,$db_table_prefix;
+	//$typeId is the proof that of where the transaction occurred. 
+	$stmt = $mysqli->prepare("INSERT INTO ".$db_table_prefix."marks  (
+		user_id,
+		question_id,
+		marks_awarded,
+		updated_by
+		)
+		VALUES (
+		?,
+		?,
+		?,
+		?
+		)");
+	$stmt->bind_param("iiii", $userId,$questionId,$marksAwarded,$marksAwardedBy);
+	$stmt->execute();
+	$stmt->close();
+	
+}
+
+
+// update total marks in user profile....
+function updateUserProfileMarks($marks,$userId)
+{
+	global $mysqli,$db_table_prefix;
+	$stmt = $mysqli->prepare("UPDATE ".$db_table_prefix."users
+		SET total_marks = ?
+		WHERE
+		id = ?
+		");
+	$stmt->bind_param("ii", $marks, $userId);
+	$result = $stmt->execute();
+	$stmt->close();
+	echo $result;
+	return $result;
+}
+
+// Function to fetch marks and sum it for a user...
+function fetchTotalMarks($id)
+{
+	$data = $id;
+	global $mysqli,$db_table_prefix; 
+	$stmt = $mysqli->prepare("SELECT 
+		user_id,
+		marks_awarded
+        FROM ".$db_table_prefix."marks
+		WHERE
+		user_id = ?
+		");
+		$stmt->bind_param("s", $data);
+	$totalMarks = 0;
+	$stmt->execute();
+	$stmt->bind_result($id,$marks);
+	while ($stmt->fetch()){
+		$totalMarks = $totalMarks + $marks;
+		
+	}
+	
+
+	
+	$stmt->close();
+	return $totalMarks;
+}
+
 ?>
