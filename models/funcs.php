@@ -1272,7 +1272,46 @@ function fetchQuestionDetails($id)
 				Question Type : '.$questionType.'<br>
 				Question asked By : '.$questionAskedBy.'<br>
 		';
-		$numrows=$numrows+1;
+		//$numrows=$numrows+1;
+		// $row = array('userid' => $userId, 'credits'=>$credits,'type'=>$type);
+		// echo $row['userid'].$row['credits'].$row['type'];
+	}
+
+	
+	$stmt->close();
+	
+}
+
+// User Dashboard Details...
+function letsBuildUserDashboard($id)
+{
+	$data = $id;
+	global $mysqli,$db_table_prefix; 
+	$stmt = $mysqli->prepare("SELECT 
+		id,
+		user_name,
+		display_name,
+		email,
+		total_marks,
+		questions_attempted
+        FROM ".$db_table_prefix."users
+		WHERE
+		id = ?
+		");
+		$stmt->bind_param("s", $data);
+	$numrows=0;
+	$stmt->execute();
+	$stmt->bind_result($id,$userName,$displayName,$email,$totalMarks,$questionsAttempted);
+	while ($stmt->fetch()){
+		echo '
+				USER ID: '.$id.'<br>
+				User Name : '.$userName.'<br>
+				Display Name : '.$displayName.'<br>
+				Email  : '.$email.'<br>
+				Total Marks : '.$totalMarks.'<br>
+				Total Questions Attempted : '.$questionsAttempted.'<br>
+		';
+		//$numrows=$numrows+1;
 		// $row = array('userid' => $userId, 'credits'=>$credits,'type'=>$type);
 		// echo $row['userid'].$row['credits'].$row['type'];
 	}
