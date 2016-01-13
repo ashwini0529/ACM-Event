@@ -1229,13 +1229,9 @@ function fetchQuestions(){
 	<p>Question Title : '.$questionTitle.'</p><br>
 	<p>Question Description : '.$questionDescription.'</p><br>
 	<p>Question Marks : '.$questionMarks.'</p><br>
-	<p>Question Description : '.$questionType.'</p><br>
+	<p>Question Type : '.$questionType.'</p><br>
 	<p>Question Posted By : '.$questionPostedBy.'</p><br>
-
-	<form action = "upload.php" method = "POST" name = "uploadSolution">
-	<p>Upload file : <input type="file" name="fileToUpload" id="fileToUpload">
-	<input name = "uploadedBy" value = "'.$loggedInUser->user_id.'">
-    <input type="submit" value="Upload Code" name="submit">
+	<a href = "uploadSolution.php?id='.$id.'">Click here for details</a>
 
 	<p>------------------------------------------------------------------------------<br>
 
