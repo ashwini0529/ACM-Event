@@ -1240,4 +1240,45 @@ function fetchQuestions(){
 }
 	$stmt->close();
 }
+
+// Function to show details of a question by passing id of the question..
+
+
+function fetchQuestionDetails($id)
+{
+	$data = $id;
+	global $mysqli,$db_table_prefix; 
+	$stmt = $mysqli->prepare("SELECT 
+		id,
+		question_title,
+		question_description,
+		marks,
+		question_type,
+		user_id
+        FROM ".$db_table_prefix."questions
+		WHERE
+		id = ?
+		");
+		$stmt->bind_param("s", $data);
+	$numrows=0;
+	$stmt->execute();
+	$stmt->bind_result($id,$questionTitle,$questionDescription,$questionMarks,$questionType,$questionAskedBy);
+	while ($stmt->fetch()){
+		echo '
+				ID: '.$id.'<br>
+				Question Title : '.$questionTitle.'<br>
+				Question description: '.$questionDescription.'<br>
+				Question Marks : '.$questionMarks.'<br>
+				Question Type : '.$questionType.'<br>
+				Question asked By : '.$questionAskedBy.'<br>
+		';
+		$numrows=$numrows+1;
+		// $row = array('userid' => $userId, 'credits'=>$credits,'type'=>$type);
+		// echo $row['userid'].$row['credits'].$row['type'];
+	}
+
+	
+	$stmt->close();
+	
+}
 ?>
