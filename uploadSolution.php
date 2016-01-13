@@ -8,6 +8,7 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 if(!isUserLoggedIn()) { header("Location: login.php"); die(); }
 
     require_once("models/header.php");
+    echo '<h3>Hey, '.$loggedInUser->username.'</h3>';
     fetchQuestionDetails($_GET['id']);
 
    if(isset($_FILES['image'])){
