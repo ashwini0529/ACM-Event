@@ -19,7 +19,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-Thank you for downloading UserCake, the simple user management package.
+Thank you for downloading  , the simple user management package.
 
 //--Installation.
 
@@ -29,21 +29,21 @@ Thank you for downloading UserCake, the simple user management package.
 
 3. Fill out the connection details in db-settings.php
 
-4. UserCake supports MySQLi and requires MySQL server version 4.1.3 or newer.
+4.   supports MySQLi and requires MySQL server version 4.1.3 or newer.
 
-5. To use the installer visit http://yourdomain.com/install/ in your browser. UserCake will attempt to build the database for you. After completion
+5. To use the installer visit http://yourdomain.com/install/ in your browser.   will attempt to build the database for you. After completion
    delete the install folder.
 
 -  That's it you're good to go! In only five steps you have a fully functional user management system.
-   For further documentation visit http://usercake.com
+   For further documentation visit http:// .com
 
 //--Credits
 
-UserCake created by: Adam Davis
-UserCake V2.0 designed by: Jonathan Cassels
+  created by: Adam Davis
+  V2.0 designed by: Jonathan Cassels
 
 ---------------------------------------------------------------
 
 Vers: 2.0.2
-http://usercake.com
-http://usercake.com/LICENCE.txt
+http:// .com
+http:// .com/LICENCE.txt

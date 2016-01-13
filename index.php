@@ -1,7 +1,7 @@
 <?php
 /*
-UserCake Version: 2.0.2
-http://usercake.com
+  Version: 2.0.2
+http:// .com
 */
 
 require_once("models/config.php");
@@ -13,7 +13,7 @@ echo "
 <div id='wrapper'>
 <div id='top'><div id='logo'></div></div>
 <div id='content'>
-<h1>UserCake</h1>
+<h1> </h1>
 <h2>2.00</h2>
 <div id='left-nav'>";
 include("left-nav.php");
@@ -21,7 +21,7 @@ include("left-nav.php");
 echo "
 </div>
 <div id='main'>
-<p>Thank you for downloading UserCake. 100% Free and Opensource.</p>
+<p>Thank you for downloading  . 100% Free and Opensource.</p>
 <p>Copyright (c) 2009-2012</p>
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the 'Software'), to deal

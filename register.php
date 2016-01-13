@@ -1,7 +1,7 @@
 <?php
 /*
-UserCake Version: 2.0.2
-http://usercake.com
+  Version: 2.0.2
+http:// .com
 */
 
 require_once("models/config.php");
@@ -68,7 +68,7 @@ if(!empty($_POST))
 		else
 		{
 			//Attempt to add the user to the database, carry out finishing  tasks like emailing the user (if required)
-			if(!$user->userCakeAddUser())
+			if(!$user-> AddUser())
 			{
 				if($user->mail_failure) $errors[] = lang("MAIL_ERROR");
 				if($user->sql_failure)  $errors[] = lang("SQL_ERROR");
@@ -86,7 +86,7 @@ echo "
 <div id='wrapper'>
 <div id='top'><div id='logo'></div></div>
 <div id='content'>
-<h1>UserCake</h1>
+<h1> </h1>
 <h2>Register</h2>
 
 <div id='left-nav'>";

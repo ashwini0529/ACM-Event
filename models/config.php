@@ -1,7 +1,7 @@
 <?php
 /*
-UserCake Version: 2.0.2
-http://usercake.com
+  Version: 2.0.2
+http:// .com
 */
 require_once("db-settings.php"); //Require DB connection
 
@@ -49,9 +49,9 @@ session_start();
 
 //Global User Object Var
 //loggedInUser can be used globally if constructed
-if(isset($_SESSION["userCakeUser"]) && is_object($_SESSION["userCakeUser"]))
+if(isset($_SESSION[" User"]) && is_object($_SESSION[" User"]))
 {
-	$loggedInUser = $_SESSION["userCakeUser"];
+	$loggedInUser = $_SESSION[" User"];
 }
 
 ?>

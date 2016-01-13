@@ -1,7 +1,7 @@
 <?php 
 /*
-UserCake Version: 2.0.1
-http://usercake.com
+  Version: 2.0.1
+http:// .com
 */
 require_once("models/config.php");
 if (!securePage($_SERVER['PHP_SELF'])){die();}
@@ -43,7 +43,7 @@ echo "
 <div id='wrapper'>
 <div id='top'><div id='logo'></div></div>
 <div id='content'>
-<h1>UserCake</h1>
+<h1> </h1>
 <h2>Activate Account</h2>
 
 <div id='left-nav'>";

@@ -1,7 +1,7 @@
 <?php
 /*
-UserCake Version: 2.0.2
-http://usercake.com
+  Version: 2.0.2
+http:// .com
 */
 
 
@@ -50,7 +50,7 @@ class User
 		}
 	}
 	
-	public function userCakeAddUser()
+	public function  AddUser()
 	{
 		global $mysqli,$emailActivation,$websiteUrl,$db_table_prefix;
 		
@@ -69,7 +69,7 @@ class User
 				//User must activate their account first
 				$this->user_active = 0;
 				
-				$mail = new userCakeMail();
+				$mail = new  Mail();
 				
 				//Build the activation message
 				$activation_message = lang("ACCOUNT_ACTIVATION_MESSAGE",array($websiteUrl,$this->activation_token));
