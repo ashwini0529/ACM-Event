@@ -1,7 +1,7 @@
 <?php
 /*
-UserCake Version: 2.0.2
-http://usercake.com
+  Version: 2.0.2
+http:// .com
 */
 
 require_once("models/config.php");
@@ -21,7 +21,7 @@ if(!empty($_GET["confirm"]))
 		$rand_pass = getUniqueCode(15); //Get unique code
 		$secure_pass = generateHash($rand_pass); //Generate random hash
 		$userdetails = fetchUserDetails(NULL,$token); //Fetchs user details
-		$mail = new userCakeMail();		
+		$mail = new  Mail();		
 		
 		//Setup our custom hooks
 		$hooks = array(
@@ -135,7 +135,7 @@ if(!empty($_POST))
 				
 				//We use the activation token again for the url key it gets regenerated everytime it's used.
 				
-				$mail = new userCakeMail();
+				$mail = new  Mail();
 				$confirm_url = lang("CONFIRM")."\n".$websiteUrl."forgot-password.php?confirm=".$userdetails["activation_token"];
 				$deny_url = lang("DENY")."\n".$websiteUrl."forgot-password.php?deny=".$userdetails["activation_token"];
 				
@@ -179,7 +179,7 @@ echo "
 <div id='wrapper'>
 <div id='top'><div id='logo'></div></div>
 <div id='content'>
-<h1>UserCake</h1>
+<h1> </h1>
 <h2>Forgot Password</h2>
 <div id='left-nav'>";
 

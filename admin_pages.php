@@ -1,13 +1,13 @@
 <?php
 /*
-UserCake Version: 2.0.2
-http://usercake.com
+  Version: 2.0.2
+http:// .com
 */
 
 require_once("models/config.php");
 if (!securePage($_SERVER['PHP_SELF'])){die();}
 
-$pages = getPageFiles(); //Retrieve list of pages in root usercake folder
+$pages = getPageFiles(); //Retrieve list of pages in root   folder
 $dbpages = fetchAllPages(); //Retrieve list of pages in pages table
 $creations = array();
 $deletions = array();
@@ -48,7 +48,7 @@ echo "
 <div id='wrapper'>
 <div id='top'><div id='logo'></div></div>
 <div id='content'>
-<h1>UserCake</h1>
+<h1> </h1>
 <h2>Admin Pages</h2>
 <div id='left-nav'>";
 

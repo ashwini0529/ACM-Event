@@ -1,6 +1,6 @@
 /*
-UserCake Version: 2.0.2
-http://usercake.com
+  Version: 2.0.2
+http:// .com
 */
 function showHide(div){
 	if(document.getElementById(div).style.display = 'block'){

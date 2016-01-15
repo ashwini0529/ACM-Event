@@ -1,7 +1,7 @@
 <?php
 /*
-UserCake Version: 2.0.2
-http://usercake.com
+  Version: 2.0.2
+http:// .com
 */
 
 //Functions that do not interact with DB
@@ -397,7 +397,7 @@ function isUserLoggedIn()
 		}
 		else
 		{
-			destroySession("userCakeUser");
+			destroySession(" User");
 			return false;	
 		}
 	}

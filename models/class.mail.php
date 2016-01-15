@@ -1,11 +1,11 @@
 <?php
 /*
-UserCake Version: 2.0.2
-http://usercake.com
+  Version: 2.0.2
+http:// .com
 */
 
-class userCakeMail {
-	//UserCake uses a text based system with hooks to replace various strs in txt email templates
+class  Mail {
+	//  uses a text based system with hooks to replace various strs in txt email templates
 	public $contents = NULL;
 	
 	//Function used for replacing hooks in our templates
