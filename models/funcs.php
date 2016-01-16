@@ -1310,6 +1310,7 @@ function letsBuildUserDashboard($id)
 				Email  : '.$email.'<br>
 				Total Marks : '.$totalMarks.'<br>
 				Total Questions Attempted : '.$questionsAttempted.'<br>
+
 		';
 		//$numrows=$numrows+1;
 		// $row = array('userid' => $userId, 'credits'=>$credits,'type'=>$type);
@@ -1468,5 +1469,39 @@ function updateTotalQuestionsAttempted($userId)
 	$stmt->close();
 	echo $result;
 }
+
+//Function to get the rank of the user.
+
+function getUserRank($userId){
+
+	global $mysqli,$db_table_prefix;
+	$stmt = $mysqli->prepare("SELECT 
+			id
+			FROM ".$db_table_prefix."users
+			ORDER BY total_marks
+			DESC
+			");
+		$stmt->execute();
+
+	$stmt->bind_result($id);
+	
+	// Declaring a Rank counter
+	$rankCounter = 1;
+	while ($stmt->fetch()){
+
+		if($id!=$userId){
+
+				$rankCounter = $rankCounter+1;
+		}
+
+		else break;
+
+		
+
+	}
+	$stmt->close();
+	return $rankCounter;
+}
+
 
 ?>
