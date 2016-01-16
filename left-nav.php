@@ -26,6 +26,10 @@ if(isUserLoggedIn()) {
 	<li><a href='admin_users.php'>Admin Users</a></li>
 	<li><a href='admin_permissions.php'>Admin Permissions</a></li>
 	<li><a href='admin_pages.php'>Admin Pages</a></li>
+	<li><a href='admin_addQuestion.php'>Add Question</a></li>
+	<li><a href='admin_updateMarks.php'>Update marks</a></li>
+	
+
 	</ul>";
 	}
 } 
