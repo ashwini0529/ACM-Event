@@ -1387,4 +1387,71 @@ function fetchTotalMarks($id)
 	return $totalMarks;
 }
 
+// Function to insert the data about the solution (Code uploaded) into Database..
+
+
+function addUploadDetails($userId,$questionId){
+	 global $mysqli,$db_table_prefix;
+	//$typeId is the proof that of where the transaction occurred. 
+	$stmt = $mysqli->prepare("INSERT INTO ".$db_table_prefix."uploads (
+		user_id,
+		question_id
+		)
+		VALUES (
+		?,
+		?
+		)");
+	$stmt->bind_param("ii", $userId,$questionId);
+	
+	$stmt->execute();
+	$stmt->close();
+	
+}
+
+
+// Function to build the leaderboard with top 20 people with marks, rank, and name..
+
+
+
+function letsBuildLeaderBoard(){
+
+	global $mysqli,$db_table_prefix;
+	$stmt = $mysqli->prepare("SELECT 
+			id,
+			user_name,
+			display_name,
+			total_marks,
+			questions_attempted
+			FROM ".$db_table_prefix."users
+			ORDER BY total_marks
+		    DESC
+		    LIMIT 20
+			");
+		$stmt->execute();
+
+	$stmt->bind_result($id,$userName, $displayName,$totalMarks, $questionsAttempted);
+	
+	// Declaring a Rank counter
+	$rankCounter = 1;
+	while ($stmt->fetch()){
+
+		
+	echo '
+	<br>
+	<p>Rank : '.$rankCounter.'</p><br>
+	<p>Username : '.$userName.'</p><br>
+	<p>Full Name : '.$displayName.'</p><br>
+	<p>Total Marks : '.$totalMarks.'</p><br>
+	<p>Questions Attempted : '.$questionsAttempted.'</p><br>
+	
+
+	<p>------------------------------------------------------------------------------<br>
+
+
+	';
+}
+	$stmt->close();
+}
+
+
 ?>
