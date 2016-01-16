@@ -33,6 +33,8 @@ if(!isUserLoggedIn()) { header("Location: login.php"); die(); }
          move_uploaded_file($file_tmp,"uploads/".$fileNewName);
          echo "Success";
          addUploadDetails($loggedInUser->user_id,$_GET['id']);
+         updateTotalQuestionsAttempted($loggedInUser->user_id);
+         echo '<br>Total Questions attempted increased in users table..';
       }else{
          print_r($errors);
       }

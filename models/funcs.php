@@ -1453,5 +1453,20 @@ function letsBuildLeaderBoard(){
 	$stmt->close();
 }
 
+// Update total number of questions attempted in the User table.
+
+function updateTotalQuestionsAttempted($userId)
+{
+	global $mysqli,$db_table_prefix;
+	$stmt = $mysqli->prepare("UPDATE ".$db_table_prefix."users
+		SET questions_attempted = questions_attempted+1
+		WHERE
+		id = ?
+		");
+	$stmt->bind_param("i",$userId);
+	$result = $stmt->execute();
+	$stmt->close();
+	echo $result;
+}
 
 ?>
