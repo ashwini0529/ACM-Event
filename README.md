@@ -46,8 +46,6 @@ Import /database/events.sql file in PhpMyAdmin.
 Type localhost/{project name} in your Browser Address Bar.
 ```
 
-### Plugins
-
 
 ### Development
 
