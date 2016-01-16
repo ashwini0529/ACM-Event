@@ -1450,6 +1450,7 @@ function letsBuildLeaderBoard(){
 
 
 	';
+	$rankCounter=$rankCounter+1;
 }
 	$stmt->close();
 }
