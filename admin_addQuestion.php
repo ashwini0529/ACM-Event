@@ -7,7 +7,7 @@ http:// .com
 require_once("models/config.php");
 if (!securePage($_SERVER['PHP_SELF'])){die();}
 require_once("models/header.php");
-
+if ($loggedInUser->checkPermission(array(2))){
 if (isset($_POST['title'])&&isset($_POST['description'])) {
 
 	$questionTitle = $_POST['title'];
@@ -51,3 +51,9 @@ echo "
 
 </p>
 </form>
+
+<?php
+
+}
+else echo 'Sorry . You are not the administrator of the site.. Your IP is traced.';
+?>

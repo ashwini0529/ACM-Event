@@ -1310,6 +1310,7 @@ function letsBuildUserDashboard($id)
 				Email  : '.$email.'<br>
 				Total Marks : '.$totalMarks.'<br>
 				Total Questions Attempted : '.$questionsAttempted.'<br>
+
 		';
 		//$numrows=$numrows+1;
 		// $row = array('userid' => $userId, 'credits'=>$credits,'type'=>$type);
@@ -1386,5 +1387,122 @@ function fetchTotalMarks($id)
 	$stmt->close();
 	return $totalMarks;
 }
+
+// Function to insert the data about the solution (Code uploaded) into Database..
+
+
+function addUploadDetails($userId,$questionId){
+	 global $mysqli,$db_table_prefix;
+	//$typeId is the proof that of where the transaction occurred. 
+	$stmt = $mysqli->prepare("INSERT INTO ".$db_table_prefix."uploads (
+		user_id,
+		question_id
+		)
+		VALUES (
+		?,
+		?
+		)");
+	$stmt->bind_param("ii", $userId,$questionId);
+	
+	$stmt->execute();
+	$stmt->close();
+	
+}
+
+
+// Function to build the leaderboard with top 20 people with marks, rank, and name..
+
+
+
+function letsBuildLeaderBoard(){
+
+	global $mysqli,$db_table_prefix;
+	$stmt = $mysqli->prepare("SELECT 
+			id,
+			user_name,
+			display_name,
+			total_marks,
+			questions_attempted
+			FROM ".$db_table_prefix."users
+			ORDER BY total_marks
+		    DESC
+		    LIMIT 20
+			");
+		$stmt->execute();
+
+	$stmt->bind_result($id,$userName, $displayName,$totalMarks, $questionsAttempted);
+	
+	// Declaring a Rank counter
+	$rankCounter = 1;
+	while ($stmt->fetch()){
+
+		
+	echo '
+	<br>
+	<p>Rank : '.$rankCounter.'</p><br>
+	<p>Username : '.$userName.'</p><br>
+	<p>Full Name : '.$displayName.'</p><br>
+	<p>Total Marks : '.$totalMarks.'</p><br>
+	<p>Questions Attempted : '.$questionsAttempted.'</p><br>
+	
+
+	<p>------------------------------------------------------------------------------<br>
+
+
+	';
+	$rankCounter=$rankCounter+1;
+}
+	$stmt->close();
+}
+
+// Update total number of questions attempted in the User table.
+
+function updateTotalQuestionsAttempted($userId)
+{
+	global $mysqli,$db_table_prefix;
+	$stmt = $mysqli->prepare("UPDATE ".$db_table_prefix."users
+		SET questions_attempted = questions_attempted+1
+		WHERE
+		id = ?
+		");
+	$stmt->bind_param("i",$userId);
+	$result = $stmt->execute();
+	$stmt->close();
+	echo $result;
+}
+
+//Function to get the rank of the user.
+
+function getUserRank($userId){
+
+	global $mysqli,$db_table_prefix;
+	$stmt = $mysqli->prepare("SELECT 
+			id
+			FROM ".$db_table_prefix."users
+			ORDER BY total_marks
+			DESC
+			");
+		$stmt->execute();
+
+	$stmt->bind_result($id);
+	
+	// Declaring a Rank counter
+	$rankCounter = 1;
+	while ($stmt->fetch()){
+
+		if($id!=$userId){
+
+				$rankCounter = $rankCounter+1;
+		}
+
+		else break;
+
+		
+
+	}
+	$stmt->close();
+	return $rankCounter;
+}
+
 
 ?>
