@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Meta UTF8 charset -->
+    <meta charset="UTF-8" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300%7C' rel='stylesheet' type='text/css'>
+
+    <title>ACM Coding Event | Just another WordPress site</title>
+    <link rel="alternate" type="application/rss+xml" title="Signature Responsive Wordpress Theme &raquo; Feed" href="http://ninetheme.com/themes/signature/index.php/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Signature Responsive Wordpress Theme &raquo; Comments Feed" href="http://ninetheme.com/themes/signature/index.php/comments/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Signature Responsive Wordpress Theme &raquo; frontpage Comments Feed" href="http://ninetheme.com/themes/signature/index.php/sample-page-2-2/feed/" />
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "http:\/\/s.w.org\/images\/core\/emoji\/72x72\/",
+            "ext": ".png",
+            "source": {
+                "concatemoji": "http:\/\/ninetheme.com\/themes\/signature\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.2"
+            }
+        };
+        ! function(a, b, c) {
+            function d(a) {
+                var c = b.createElement("canvas"),
+                    d = c.getContext && c.getContext("2d");
+                return d && d.fillText ? (d.textBaseline = "top", d.font = "600 32px Arial", "flag" === a ? (d.fillText(String.fromCharCode(55356, 56812, 55356, 56807), 0, 0), c.toDataURL().length > 3e3) : (d.fillText(String.fromCharCode(55357, 56835), 0, 0), 0 !== d.getImageData(16, 16, 1, 1).data[0])) : !1
+            }
+
+            function e(a) {
+                var c = b.createElement("script");
+                c.src = a, c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+            }
+            var f, g;
+            c.supports = {
+                simple: d("simple"),
+                flag: d("flag")
+            }, c.DOMReady = !1, c.readyCallback = function() {
+                c.DOMReady = !0
+            }, c.supports.simple && c.supports.flag || (g = function() {
+                c.readyCallback()
+            }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function() {
+                "complete" === b.readyState && c.readyCallback()
+            })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='contact-form-7-css' href='http://ninetheme.com/themes/signature/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.3.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='ninetheme_signature_cssbootstrap-css' href='http://ninetheme.com/themes/signature/wp-content/themes/signature/css/main.min.css?ver=1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='ninetheme_signature_awesome-css' href='http://ninetheme.com/themes/signature/wp-content/themes/signature/css/custom.css?ver=1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='ninetheme_signature_wordpress-style-css' href='http://ninetheme.com/themes/signature/wp-content/themes/signature/css/wordpress.css?ver=1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='ninetheme_signature_flexslidercss-css' href='http://ninetheme.com/themes/signature/wp-content/themes/signature/css/flexslider.css?ver=1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='ninetheme_signature_fonts-load-css' href='//fonts.googleapis.com/css?family=Open%2BSans%7CLato%7CRoboto%3A700%2C300%2C600%2C400%2C500&#038;ver=1.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='style-css' href='http://ninetheme.com/themes/signature/wp-content/themes/signature/style.css?ver=4.3.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css' href='//ninetheme.com/themes/signature/wp-content/uploads/js_composer/js_composer_front_custom.css?ver=4.8.1' type='text/css' media='all' />
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ninetheme.com/themes/signature/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ninetheme.com/themes/signature/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 4.3.2" />
+    <link rel='canonical' href='http://ninetheme.com/themes/signature/' />
+    <link rel='shortlink' href='http://ninetheme.com/themes/signature/' />
+
+    <!-- Font -->
+
+    <style>
+        .navigation-container {
+            background-color: #171717;
+        }
+        
+        .navigation-container nav .nav-inner li a {
+            color: #fff;
+        }
+        
+        .navigation-container nav .nav-inner li a:hover {
+            color: #fff200;
+        }
+        
+        .fullscreen {
+            background-color: #171717;
+        }
+    </style>
+
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress." />
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://ninetheme.com/themes/signature/wp-content/plugins/vc_composer_4_8_1/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+    <!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://ninetheme.com/themes/signature/wp-content/plugins/vc_composer_4_8_1/assets/css/vc-ie8.min.css" media="screen"><![endif]-->
+    <style type="text/css" data-type="vc_shortcodes-custom-css">
+        .vc_custom_1451667456399 {
+            background-image: url(background.jpeg) !important;
+        }
+    </style>
+    <noscript>
+        <style type="text/css">
+            .wpb_animate_when_almost_visible {
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+</head>
+
+<!-- BODY START=========== -->
+
+<body class="home page page-id-755 page-template page-template-unlimited-page page-template-unlimited-page-php wpb-js-composer js-comp-ver-4.8.1 vc_responsive">
+
+    <!-- PRELOADER -->
+    <div class="loader">
+        <div class="logo">
+            <!-- Your preloader Logo -->
+
+            <img src="logo.png" alt="Signature Theme">
+
+        </div>
+        <div class="top"></div>
+        <div class="left"></div>
+        <div class="bottom"></div>
+        <div class="right"></div>
+    </div>
+    <!-- /PRELOADER -->
+
+    <div class="fixed-bar horizontal top"></div>
+    <div class="fixed-bar vertical left"></div>
+    <div class="fixed-bar vertical right"></div>
+    <div class="fixed-bar horizontal bottom"></div>
+
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="http://ninetheme.com/themes/signature/" class="navbar-brand"><img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/12/logo-light.png" alt="Signature Theme"></a>
+            <!-- Your Logo -->
+        </div>
+        <a href="#" class="icon-trigger"><span class="burger"></span></a>
+        <div class="navigation-container">
+            <nav>
+                <ul id="main-nav" class="nav-inner-blog simple">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#agenda">agenda</a></li>
+                    <li><a href="#speakers">speakers</a></li>
+                    <li><a href="#registration">registration</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#sponsor">sponsor</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="http://ninetheme.com/themes/signature/index.php/blog/">Blog</a></li>
+                </ul>
+            </nav>
+            <!-- Social Icons -->
+            <nav class="social-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </nav>
+            <!-- End Social Icons -->
+        </div>
+    </header>
+    <div class="main-wrapper">
+        <div class="vc_row wpb_row vc_row-fluid">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="wpb_wrapper">
+                    <div id="home" class="hero fullscreen parallax flash  vc_custom_1451667456399">
+                        <div class="content-section fixed-content">
+                            <div class="slide overlay dark ">
+                                <div class="slide-content">
+                                    <div class="vertical-align">
+                                        <div class="vertical-center">
+                                            <div class="slider-inner">
+                                                <div class="date"><span>22nd January,2016 | VIT University</span></div>
+                                                <h1>CODE BURST</h1>
+                                                <ul class="hashtags simple">
+                                                    <li>#Code</li>
+                                                    <li>#Code</li>
+                                                    <li>#Code</li>
+                                                    <li>#Code</li>
+                                                    <li>#Code</li>
+                                                </ul><a href="registration.html" class="btn large scroll">Register</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="countdown-section">
+                            <h5 class="bold uppercase">EVENT STARTS IN</h5>
+                            <div class="countdown" data-seconds="true" data-end="January 22, 2016 10:00:00"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vc_row wpb_row vc_row-fluid">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="wpb_wrapper">
+                    <section id="about" class="section parallax right-wrapper fixed-image" data-background="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/background1.jpg">
+                        <div class="container">
+                            <div class="row">
+                                <div class="c-6 offset-6">
+                                    <!-- Title -->
+                                    <div class="title normal">
+                                        <h2 class="uppercase white-title">ABOUT THIS EVENT</h2></div>
+                                    <!-- End Title -->
+                                    <p class="white-title">These cases are perfectly simple and easy to distinguish.</p>
+                                    <div>
+                                        <div class="white-title">
+                                            <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+                                            <p>Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing metus sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                                            <p>In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula.</p>
+                                        </div>
+                                        <div><a href="#" class="btn small load-speaker-list">READ MORE</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="vc_row wpb_row vc_row-fluid">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="wpb_wrapper">
+                    <!-- Section -->
+                    <section id="agenda" class="section">
+                        <div class="container">
+                            <!-- Title -->
+                            <div class="title large"><span>01</span>
+                                <h2 class="uppercase">AGENDA</h2>
+                                <p class="subtitle">Eius repellat natus minima quam ipsa maxime, et error recusandae dolorem blanditiis optio distinctio non placeat omnis culpa ratione quisquam voluptatibus tempora.</p>
+                            </div>
+                            <!-- End Title -->
+                            <div class="row">
+                                <div class="c-12">
+                                    <!-- Tabs List -->
+                                    <ul class="tabs">
+                                        <li><a class="active" href="#tab1">Tuesday, April 7th</a></li>
+                                        <li><a class="inactive" href="#tab2">Wednesday, April 8th</a></li>
+                                        <li><a class="inactive" href="#tab3">Thursday, April 9th</a></li>
+                                    </ul>
+                                    <!-- End Tabs List -->
+                                    <!-- Tabs Content -->
+                                    <div class="tabs-content">
+                                        <!-- Tab -->
+                                        <div class="active tab" id="tab1">
+                                            <!-- Body Tab -->
+                                            <div class="tab-body">
+                                                <div class="post-date">
+                                                    <p>08:00</p>
+                                                </div>
+                                                <div class="c-10 offset-2 post-body">
+                                                    <div class="row">
+                                                        <div class="c-3">
+                                                            <div class="post-media "> <img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker5.jpg" alt="Signature Theme"></div>
+                                                        </div>
+                                                        <div class="c-9">
+                                                            <div class="post-title">
+                                                                <h4 class="uppercase">Calculate graphics</h4></div>
+                                                            <div class="post-excerpt">
+                                                                <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+                                                            </div>
+                                                            <div class="post-meta">
+                                                                <ul class="simple">
+                                                                    <li><span>JOHN DOE - -</span> <a href="#"> CEO at Twitter</a></li>
+                                                                    <li><i class="fa fa-clock-o"></i> <span> 45 MINS </span></li>
+                                                                    <li><i class="fa fa-map-marker"></i> <span> 80TH FLOOR</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Body Tab -->
+                                            <!-- Body Tab -->
+                                            <div class="tab-body">
+                                                <div class="post-date">
+                                                    <p>08:35</p>
+                                                </div>
+                                                <div class="c-10 offset-2 post-body">
+                                                    <div class="row">
+                                                        <div class="c-3">
+                                                            <div class="post-media "> <img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker4.jpg" alt="Signature Theme"></div>
+                                                        </div>
+                                                        <div class="c-9">
+                                                            <div class="post-title">
+                                                                <h4 class="uppercase">The art of Entertaining</h4></div>
+                                                            <div class="post-excerpt">
+                                                                <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+                                                            </div>
+                                                            <div class="post-meta">
+                                                                <ul class="simple">
+                                                                    <li><span>MELISA DOE - -</span> <a href="#"> CEO at Facebook</a></li>
+                                                                    <li><i class="fa fa-clock-o"></i> <span> 45 MINS </span></li>
+                                                                    <li><i class="fa fa-map-marker"></i> <span> 80TH FLOOR</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Body Tab -->
+                                            <!-- Body Tab -->
+                                            <div class="tab-body">
+                                                <div class="post-date">
+                                                    <p>09:45</p>
+                                                </div>
+                                                <div class="c-10 offset-2 post-body">
+                                                    <div class="row">
+                                                        <div class="c-3">
+                                                            <div class="post-media "> <img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker3.jpg" alt="Signature Theme"></div>
+                                                        </div>
+                                                        <div class="c-9">
+                                                            <div class="post-title">
+                                                                <h4 class="uppercase">Speaking about moderation</h4></div>
+                                                            <div class="post-excerpt">
+                                                                <p>Eius repellat natus minima quam ipsa maxime, et error recusandae dolorem blanditiis optio distinctio non placeat omnis culpa ratione quisquam voluptatibus tempora.</p>
+                                                            </div>
+                                                            <div class="post-meta">
+                                                                <ul class="simple">
+                                                                    <li><span>Hillary YELLOW - -</span> <a href="#"> CEO at Twitter</a></li>
+                                                                    <li><i class="fa fa-clock-o"></i> <span> 45 MINS </span></li>
+                                                                    <li><i class="fa fa-map-marker"></i> <span> 80TH FLOOR</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Body Tab -->
+                                            <!-- Body Tab -->
+                                            <div class="tab-body">
+                                                <div class="post-date">
+                                                    <p>12:00</p>
+                                                </div>
+                                                <div class="c-10 offset-2 post-body">
+                                                    <div class="row">
+                                                        <div class="c-3">
+                                                            <div class="post-media "> <img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker2.jpg" alt="Signature Theme"></div>
+                                                        </div>
+                                                        <div class="c-9">
+                                                            <div class="post-title">
+                                                                <h4 class="uppercase">Closing speech - video presentation</h4></div>
+                                                            <div class="post-excerpt">
+                                                                <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+                                                            </div>
+                                                            <div class="post-meta">
+                                                                <ul class="simple">
+                                                                    <li><span>JOHN DOE - -</span> <a href="#"> CEO at Twitter</a></li>
+                                                                    <li><i class="fa fa-clock-o"></i> <span> 45 MINS </span></li>
+                                                                    <li><i class="fa fa-map-marker"></i> <span> 80TH FLOOR</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Body Tab -->
+                                        </div>
+                                        <!-- End Tab -->
+                                        <!-- Tab -->
+                                        <div class=" tab" id="tab2">
+                                            <!-- Body Tab -->
+                                            <div class="tab-body">
+                                                <div class="post-date">
+                                                    <p>07:00</p>
+                                                </div>
+                                                <div class="c-10 offset-2 post-body">
+                                                    <div class="row">
+                                                        <div class="c-3">
+                                                            <div class="post-media "> <img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker2.jpg" alt="Signature Theme"></div>
+                                                        </div>
+                                                        <div class="c-9">
+                                                            <div class="post-title">
+                                                                <h4 class="uppercase">The art of Entertaining</h4></div>
+                                                            <div class="post-excerpt">
+                                                                <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+                                                            </div>
+                                                            <div class="post-meta">
+                                                                <ul class="simple">
+                                                                    <li><span>HILLARY DOE - -</span> <a href="#"> CEO at Envato</a></li>
+                                                                    <li><i class="fa fa-clock-o"></i> <span> 45 MINS </span></li>
+                                                                    <li><i class="fa fa-map-marker"></i> <span> 80TH FLOOR</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Body Tab -->
+                                            <!-- Body Tab -->
+                                            <div class="tab-body">
+                                                <div class="post-date">
+                                                    <p>09:00</p>
+                                                </div>
+                                                <div class="c-10 offset-2 post-body">
+                                                    <div class="row">
+                                                        <div class="c-3">
+                                                            <div class="post-media "> <img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker1.jpg" alt="Signature Theme"></div>
+                                                        </div>
+                                                        <div class="c-9">
+                                                            <div class="post-title">
+                                                                <h4 class="uppercase">Closing speech - video presentation</h4></div>
+                                                            <div class="post-excerpt">
+                                                                <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+                                                            </div>
+                                                            <div class="post-meta">
+                                                                <ul class="simple">
+                                                                    <li><span>JOHN DOE - -</span> <a href="#"> CEO at Facebook</a></li>
+                                                                    <li><i class="fa fa-clock-o"></i> <span> 55 MINS </span></li>
+                                                                    <li><i class="fa fa-map-marker"></i> <span> 80TH FLOOR</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Body Tab -->
+                                        </div>
+                                        <!-- End Tab -->
+                                        <!-- Tab -->
+                                        <div class=" tab" id="tab3">
+                                            <!-- Body Tab -->
+                                            <div class="tab-body">
+                                                <div class="post-date">
+                                                    <p>08:00</p>
+                                                </div>
+                                                <div class="c-10 offset-2 post-body">
+                                                    <div class="row">
+                                                        <div class="c-3">
+                                                            <div class="post-media "> <img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker5.jpg" alt="Signature Theme"></div>
+                                                        </div>
+                                                        <div class="c-9">
+                                                            <div class="post-title">
+                                                                <h4 class="uppercase">Calculate graphics</h4></div>
+                                                            <div class="post-excerpt">
+                                                                <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+                                                            </div>
+                                                            <div class="post-meta">
+                                                                <ul class="simple">
+                                                                    <li><span>JOHN DOE - -</span> <a href="#"> CEO at Twitter</a></li>
+                                                                    <li><i class="fa fa-clock-o"></i> <span> 45 MINS </span></li>
+                                                                    <li><i class="fa fa-map-marker"></i> <span> 80TH FLOOR</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Body Tab -->
+                                            <!-- Body Tab -->
+                                            <div class="tab-body">
+                                                <div class="post-date">
+                                                    <p>07:00</p>
+                                                </div>
+                                                <div class="c-10 offset-2 post-body">
+                                                    <div class="row">
+                                                        <div class="c-3">
+                                                            <div class="post-media "> <img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker4.jpg" alt="Signature Theme"></div>
+                                                        </div>
+                                                        <div class="c-9">
+                                                            <div class="post-title">
+                                                                <h4 class="uppercase">The art of Entertaining</h4></div>
+                                                            <div class="post-excerpt">
+                                                                <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+                                                            </div>
+                                                            <div class="post-meta">
+                                                                <ul class="simple">
+                                                                    <li><span>MELISA DOE - -</span> <a href="#"> CEO at Facebook</a></li>
+                                                                    <li><i class="fa fa-clock-o"></i> <span> 45 MINS </span></li>
+                                                                    <li><i class="fa fa-map-marker"></i> <span> 80TH FLOOR</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Body Tab -->
+                                            <!-- Body Tab -->
+                                            <div class="tab-body">
+                                                <div class="post-date">
+                                                    <p>09:45</p>
+                                                </div>
+                                                <div class="c-10 offset-2 post-body">
+                                                    <div class="row">
+                                                        <div class="c-3">
+                                                            <div class="post-media "> <img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker3.jpg" alt="Signature Theme"></div>
+                                                        </div>
+                                                        <div class="c-9">
+                                                            <div class="post-title">
+                                                                <h4 class="uppercase">Speaking about moderation</h4></div>
+                                                            <div class="post-excerpt">
+                                                                <p>Eius repellat natus minima quam ipsa maxime, et error recusandae dolorem blanditiis optio distinctio non placeat omnis culpa ratione quisquam voluptatibus tempora.</p>
+                                                            </div>
+                                                            <div class="post-meta">
+                                                                <ul class="simple">
+                                                                    <li><span>Hillary YELLOW - -</span> <a href="#"> CEO at Twitter</a></li>
+                                                                    <li><i class="fa fa-clock-o"></i> <span> 45 MINS </span></li>
+                                                                    <li><i class="fa fa-map-marker"></i> <span> 80TH FLOOR</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Body Tab -->
+                                            <!-- Body Tab -->
+                                            <div class="tab-body">
+                                                <div class="post-date">
+                                                    <p>12:00</p>
+                                                </div>
+                                                <div class="c-10 offset-2 post-body">
+                                                    <div class="row">
+                                                        <div class="c-3">
+                                                            <div class="post-media "> <img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker2.jpg" alt="Signature Theme"></div>
+                                                        </div>
+                                                        <div class="c-9">
+                                                            <div class="post-title">
+                                                                <h4 class="uppercase">Closing speech - video presentation</h4></div>
+                                                            <div class="post-excerpt">
+                                                                <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+                                                            </div>
+                                                            <div class="post-meta">
+                                                                <ul class="simple">
+                                                                    <li><span>JOHN DOE - -</span> <a href="#"> CEO at Twitter</a></li>
+                                                                    <li><i class="fa fa-clock-o"></i> <span> 45 MINS </span></li>
+                                                                    <li><i class="fa fa-map-marker"></i> <span> 80TH FLOOR</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Body Tab -->
+                                        </div>
+                                        <!-- End Tab -->
+                                    </div>
+                                    <!-- End Tabs Content -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Section -->
+                </div>
+            </div>
+        </div>
+        <div class="vc_row wpb_row vc_row-fluid">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="wpb_wrapper">
+                    <!-- Section -->
+                    <section id="speakers" class="section grey">
+                        <div class="container">
+                            <!-- Title -->
+                            <div class="title large grey"><span>02</span>
+                                <h2 class="uppercase">SPEAKERS</h2>
+                                <p class="subtitle">Eius repellat natus minima quam ipsa maxime, et error recusandae dolorem blanditiis optio distinctio non placeat omnis culpa ratione quisquam voluptatibus tempora.</p>
+                            </div>
+                            <!-- End Title -->
+                            <div class="row">
+                                <ul class="speaker-list simple">
+                                    <!-- Column -->
+                                    <li class="c-3">
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <!-- Speaker Media -->
+                                            <div class="media"><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker5.jpg" alt="Signature Theme">
+                                                <!-- Info Media -->
+                                                <div class="info-media">
+                                                    <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best.</p>
+                                                    <!-- Social Icons -->
+                                                    <nav class="social-icons">
+                                                        <a href="#" class="fa fa-facebook"></a>
+                                                        <a href="#" class="fa fa-twitter"></a>
+                                                        <a href="#" class="fa fa-instagram"></a>
+                                                    </nav>
+                                                    <!-- End Social Icons -->
+                                                </div>
+                                                <!-- End Info Media -->
+                                            </div>
+                                            <!-- End Speaker Media -->
+                                            <div class="speaker-meta">
+                                                <!-- Speaker Name -->
+                                                <h5 class="uppercase">JOHN DOE</h5>
+                                                <!-- End Speaker Name -->
+                                                <!-- Speaker Company -->
+                                                <div class="company"><span>SPEAKER AT</span> <a href="#">FACEBOOK</a></div>
+                                                <!-- End Speaker Company -->
+                                            </div>
+                                        </div>
+                                        <!-- End Speaker -->
+                                    </li>
+                                    <!-- Column -->
+                                    <li class="c-3">
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <!-- Speaker Media -->
+                                            <div class="media"><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker4.jpg" alt="Signature Theme">
+                                                <!-- Info Media -->
+                                                <div class="info-media">
+                                                    <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best.</p>
+                                                    <!-- Social Icons -->
+                                                    <nav class="social-icons">
+                                                        <a href="#" class="fa fa-facebook"></a>
+                                                        <a href="#" class="fa fa-twitter"></a>
+                                                        <a href="#" class="fa fa-instagram"></a>
+                                                    </nav>
+                                                    <!-- End Social Icons -->
+                                                </div>
+                                                <!-- End Info Media -->
+                                            </div>
+                                            <!-- End Speaker Media -->
+                                            <div class="speaker-meta">
+                                                <!-- Speaker Name -->
+                                                <h5 class="uppercase">ADAM WORKER</h5>
+                                                <!-- End Speaker Name -->
+                                                <!-- Speaker Company -->
+                                                <div class="company"><span>SPEAKER AT</span> <a href="#">APPLE</a></div>
+                                                <!-- End Speaker Company -->
+                                            </div>
+                                        </div>
+                                        <!-- End Speaker -->
+                                    </li>
+                                    <!-- Column -->
+                                    <li class="c-3">
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <!-- Speaker Media -->
+                                            <div class="media"><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker3.jpg" alt="Signature Theme">
+                                                <!-- Info Media -->
+                                                <div class="info-media">
+                                                    <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best.</p>
+                                                    <!-- Social Icons -->
+                                                    <nav class="social-icons">
+                                                        <a href="#" class="fa fa-facebook"></a>
+                                                        <a href="#" class="fa fa-twitter"></a>
+                                                        <a href="#" class="fa fa-instagram"></a>
+                                                    </nav>
+                                                    <!-- End Social Icons -->
+                                                </div>
+                                                <!-- End Info Media -->
+                                            </div>
+                                            <!-- End Speaker Media -->
+                                            <div class="speaker-meta">
+                                                <!-- Speaker Name -->
+                                                <h5 class="uppercase">MELISA DOE</h5>
+                                                <!-- End Speaker Name -->
+                                                <!-- Speaker Company -->
+                                                <div class="company"><span>SPEAKER AT</span> <a href="#">TWITTER</a></div>
+                                                <!-- End Speaker Company -->
+                                            </div>
+                                        </div>
+                                        <!-- End Speaker -->
+                                    </li>
+                                    <!-- Column -->
+                                    <li class="c-3">
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <!-- Speaker Media -->
+                                            <div class="media"><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker2.jpg" alt="Signature Theme">
+                                                <!-- Info Media -->
+                                                <div class="info-media">
+                                                    <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best.</p>
+                                                    <!-- Social Icons -->
+                                                    <nav class="social-icons">
+                                                        <a href="#" class="fa fa-facebook"></a>
+                                                        <a href="#" class="fa fa-twitter"></a>
+                                                        <a href="#" class="fa fa-instagram"></a>
+                                                    </nav>
+                                                    <!-- End Social Icons -->
+                                                </div>
+                                                <!-- End Info Media -->
+                                            </div>
+                                            <!-- End Speaker Media -->
+                                            <div class="speaker-meta">
+                                                <!-- Speaker Name -->
+                                                <h5 class="uppercase">HILLARY DOE</h5>
+                                                <!-- End Speaker Name -->
+                                                <!-- Speaker Company -->
+                                                <div class="company"><span>SPEAKER AT</span> <a href="#">LINKEDIN</a></div>
+                                                <!-- End Speaker Company -->
+                                            </div>
+                                        </div>
+                                        <!-- End Speaker -->
+                                    </li>
+                                    <!-- Column -->
+                                    <li class="c-3">
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <!-- Speaker Media -->
+                                            <div class="media"><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker1.jpg" alt="Signature Theme">
+                                                <!-- Info Media -->
+                                                <div class="info-media">
+                                                    <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best.</p>
+                                                    <!-- Social Icons -->
+                                                    <nav class="social-icons">
+                                                        <a href="#" class="fa fa-facebook"></a>
+                                                        <a href="#" class="fa fa-twitter"></a>
+                                                        <a href="#" class="fa fa-instagram"></a>
+                                                    </nav>
+                                                    <!-- End Social Icons -->
+                                                </div>
+                                                <!-- End Info Media -->
+                                            </div>
+                                            <!-- End Speaker Media -->
+                                            <div class="speaker-meta">
+                                                <!-- Speaker Name -->
+                                                <h5 class="uppercase">JOHN DOE</h5>
+                                                <!-- End Speaker Name -->
+                                                <!-- Speaker Company -->
+                                                <div class="company"><span>SPEAKER AT</span> <a href="#">APPLE</a></div>
+                                                <!-- End Speaker Company -->
+                                            </div>
+                                        </div>
+                                        <!-- End Speaker -->
+                                    </li>
+                                    <!-- Column -->
+                                    <li class="c-3">
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <!-- Speaker Media -->
+                                            <div class="media"><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker5.jpg" alt="Signature Theme">
+                                                <!-- Info Media -->
+                                                <div class="info-media">
+                                                    <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best.</p>
+                                                    <!-- Social Icons -->
+                                                    <nav class="social-icons">
+                                                        <a href="#" class="fa fa-facebook"></a>
+                                                        <a href="#" class="fa fa-twitter"></a>
+                                                        <a href="#" class="fa fa-instagram"></a>
+                                                    </nav>
+                                                    <!-- End Social Icons -->
+                                                </div>
+                                                <!-- End Info Media -->
+                                            </div>
+                                            <!-- End Speaker Media -->
+                                            <div class="speaker-meta">
+                                                <!-- Speaker Name -->
+                                                <h5 class="uppercase">MATT DOE</h5>
+                                                <!-- End Speaker Name -->
+                                                <!-- Speaker Company -->
+                                                <div class="company"><span>SPEAKER AT</span> <a href="#">MATT</a></div>
+                                                <!-- End Speaker Company -->
+                                            </div>
+                                        </div>
+                                        <!-- End Speaker -->
+                                    </li>
+                                    <!-- Column -->
+                                    <li class="c-3">
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <!-- Speaker Media -->
+                                            <div class="media"><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker3.jpg" alt="Signature Theme">
+                                                <!-- Info Media -->
+                                                <div class="info-media">
+                                                    <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best.</p>
+                                                    <!-- Social Icons -->
+                                                    <nav class="social-icons">
+                                                        <a href="#" class="fa fa-facebook"></a>
+                                                        <a href="#" class="fa fa-twitter"></a>
+                                                        <a href="#" class="fa fa-instagram"></a>
+                                                    </nav>
+                                                    <!-- End Social Icons -->
+                                                </div>
+                                                <!-- End Info Media -->
+                                            </div>
+                                            <!-- End Speaker Media -->
+                                            <div class="speaker-meta">
+                                                <!-- Speaker Name -->
+                                                <h5 class="uppercase">JOHN DOE</h5>
+                                                <!-- End Speaker Name -->
+                                                <!-- Speaker Company -->
+                                                <div class="company"><span>SPEAKER AT</span> <a href="#">APPLE</a></div>
+                                                <!-- End Speaker Company -->
+                                            </div>
+                                        </div>
+                                        <!-- End Speaker -->
+                                    </li>
+                                    <!-- Column -->
+                                    <li class="c-3">
+                                        <!-- Speaker -->
+                                        <div class="speaker">
+                                            <!-- Speaker Media -->
+                                            <div class="media"><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker4.jpg" alt="Signature Theme">
+                                                <!-- Info Media -->
+                                                <div class="info-media">
+                                                    <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best.</p>
+                                                    <!-- Social Icons -->
+                                                    <nav class="social-icons">
+                                                        <a href="#" class="fa fa-facebook"></a>
+                                                        <a href="#" class="fa fa-twitter"></a>
+                                                        <a href="#" class="fa fa-instagram"></a>
+                                                    </nav>
+                                                    <!-- End Social Icons -->
+                                                </div>
+                                                <!-- End Info Media -->
+                                            </div>
+                                            <!-- End Speaker Media -->
+                                            <div class="speaker-meta">
+                                                <!-- Speaker Name -->
+                                                <h5 class="uppercase">JOHN DOE</h5>
+                                                <!-- End Speaker Name -->
+                                                <!-- Speaker Company -->
+                                                <div class="company"><span>SPEAKER AT</span> <a href="#">APPLE</a></div>
+                                                <!-- End Speaker Company -->
+                                            </div>
+                                        </div>
+                                        <!-- End Speaker -->
+                                    </li>
+                                    <!-- End Column -->
+                                    <!-- End Column -->
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="c-12 align-center"><a href="#" class="btn small load-speaker-list">LOAD MORE</a></div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Section -->
+                </div>
+            </div>
+        </div>
+        <div class="vc_row wpb_row vc_row-fluid">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="wpb_wrapper">
+                    <!-- Section -->
+                    <section id="registration" class="section">
+                        <div class="container">
+                            <!-- Title -->
+                            <div class="title large"> <span>03</span>
+                                <h2 class="uppercase">REGISTRATION</h2>
+                                <p class="subtitle">Eius repellat natus minima quam ipsa maxime, et error recusandae dolorem blanditiis optio distinctio non placeat omnis culpa ratione quisquam voluptatibus tempora.</p>
+                            </div>
+                            <!-- End Title -->
+                            <div class="row">
+                                <!-- Pricing -->
+                                <div class="c-4 price">
+                                    <div class="price-body">
+                                        <!-- Price -->
+                                        <h4 class="price-title">INDIVIDUAL</h4>
+                                        <!-- End Price -->
+                                        <!-- Amount --><span class="amount">$99</span>
+                                        <!-- Amount -->
+                                        <!-- Short Description -->
+                                        <p class="short-description">Day 1 with access on red carpet, food &amp; beverages</p>
+                                        <!-- End Short Description -->
+                                    </div><a href="#" class="btn dark large">REGISTER NOW</a> </div>
+                                <!-- End Pricing -->
+                                <!-- Pricing -->
+                                <div class="c-4 price featured">
+                                    <div class="price-body">
+                                        <!-- Price -->
+                                        <h4 class="price-title">STARTUP</h4>
+                                        <!-- End Price -->
+                                        <!-- Amount --><span class="amount">$189</span>
+                                        <!-- Amount -->
+                                        <!-- Short Description -->
+                                        <p class="short-description">Day 2 with access on red carpet, food &amp; beverages</p>
+                                        <!-- End Short Description -->
+                                    </div><a href="#" class="btn dark large">REGISTER NOW</a> </div>
+                                <!-- End Pricing -->
+                                <!-- Pricing -->
+                                <div class="c-4 price">
+                                    <div class="price-body">
+                                        <!-- Price -->
+                                        <h4 class="price-title">COMPANY</h4>
+                                        <!-- End Price -->
+                                        <!-- Amount --><span class="amount">$389</span>
+                                        <!-- Amount -->
+                                        <!-- Short Description -->
+                                        <p class="short-description">Full day with access on red carpet, food &amp; beverages</p>
+                                        <!-- End Short Description -->
+                                    </div><a href="#" class="btn dark large">REGISTER NOW</a> </div>
+                                <!-- End Pricing -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Section -->
+                </div>
+            </div>
+        </div>
+        <div class="vc_row wpb_row vc_row-fluid">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="wpb_wrapper">
+                    <!-- Section -->
+                    <section id="gallery" class="section">
+                        <div class="container">
+                            <!-- Title -->
+                            <div class="title large"><span>04</span>
+                                <h2 class="uppercase">GALLERY</h2>
+                                <p class="subtitle">Eius repellat natus minima quam ipsa maxime, et error recusandae dolorem blanditiis optio distinctio non placeat omnis culpa ratione quisquam voluptatibus tempora.</p>
+                            </div>
+                            <!-- End Title -->
+                            <div class="row">
+                                <!-- Gallery -->
+                                <div class="grid">
+                                    <!-- Gallery Item -->
+                                    <div class="grid-item"><a href="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery10.jpg" title="Image caption here"><i class="caption-zoom icon-magnifying-glass"></i><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery10.jpg" alt="Signature Theme"></a></div>
+                                    <!-- End Gallery Item -->
+                                    <!-- Gallery Item -->
+                                    <div class="grid-item"><a href="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery1.jpg" title="Image caption here"><i class="caption-zoom icon-magnifying-glass"></i><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery1.jpg" alt="Signature Theme"></a></div>
+                                    <!-- End Gallery Item -->
+                                    <!-- Gallery Item -->
+                                    <div class="grid-item"><a href="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery8.jpg" title="Image caption here"><i class="caption-zoom icon-magnifying-glass"></i><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery8.jpg" alt="Signature Theme"></a></div>
+                                    <!-- End Gallery Item -->
+                                    <!-- Gallery Item -->
+                                    <div class="grid-item"><a href="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery2-height.jpg" title="Image caption here"><i class="caption-zoom icon-magnifying-glass"></i><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery2-height.jpg" alt="Signature Theme"></a></div>
+                                    <!-- End Gallery Item -->
+                                    <!-- Gallery Item -->
+                                    <div class="grid-item"><a href="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery6.jpg" title="Image caption here"><i class="caption-zoom icon-magnifying-glass"></i><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery6.jpg" alt="Signature Theme"></a></div>
+                                    <!-- End Gallery Item -->
+                                    <!-- Gallery Item -->
+                                    <div class="grid-item"><a href="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery4.jpg" title="Image caption here"><i class="caption-zoom icon-magnifying-glass"></i><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery4.jpg" alt="Signature Theme"></a></div>
+                                    <!-- End Gallery Item -->
+                                    <!-- Gallery Item -->
+                                    <div class="grid-item"><a href="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery3.jpg" title="Image caption here"><i class="caption-zoom icon-magnifying-glass"></i><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery3.jpg" alt="Signature Theme"></a></div>
+                                    <!-- End Gallery Item -->
+                                    <!-- Gallery Item -->
+                                    <div class="grid-item grid-item-width"><a href="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery9-width.jpg" title="Image caption here"><i class="caption-zoom icon-magnifying-glass"></i><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery9-width.jpg" alt="Signature Theme"></a></div>
+                                    <!-- End Gallery Item -->
+                                    <!-- Gallery Item -->
+                                    <div class="grid-item"><a href="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery4.jpg" title="Image caption here"><i class="caption-zoom icon-magnifying-glass"></i><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery4.jpg" alt="Signature Theme"></a></div>
+                                    <!-- End Gallery Item -->
+                                    <!-- Gallery Item -->
+                                    <div class="grid-item"><a href="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery10.jpg" title="Image caption here"><i class="caption-zoom icon-magnifying-glass"></i><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/gallery10.jpg" alt="Signature Theme"></a></div>
+                                    <!-- End Gallery Item -->
+                                </div>
+                                <!-- End Gallery -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Section -->
+                </div>
+            </div>
+        </div>
+        <div class="vc_row wpb_row vc_row-fluid">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="wpb_wrapper">
+                    <!-- Section -->
+                    <section id="testimonials" class="section dark">
+                        <div class="container">
+                            <!-- Title -->
+                            <div class="title large dark"> <span>05</span>
+                                <h2 class="uppercase">IMPRESSIONS</h2>
+                                <p class="subtitle">Eius repellat natus minima quam ipsa maxime, et error recusandae dolorem blanditiis optio distinctio non placeat omnis culpa ratione quisquam voluptatibus tempora.</p>
+                            </div>
+                            <!-- End Title -->
+                            <div class="row">
+                                <div class="c-12">
+                                    <div class="slider testimonials" data-items="3" data-navigation="true">
+                                        <!-- Testimonial -->
+                                        <div class="item">
+                                            <!-- Quote -->
+                                            <div class="quote">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est voluptatem accusamus.</p>
+                                            </div>
+                                            <!-- End Quote -->
+                                            <!-- Media -->
+                                            <div class="media"> <img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker5.jpg" width="80" height="80" alt="Signature Theme"></div>
+                                            <!-- End Media -->
+                                            <!-- User Information -->
+                                            <div class="user-information">
+                                                <h4 class="uppercase">John Doe</h4>
+                                                <p class="company">Designer at&nbsp;&nbsp;&nbsp;<a href="#">Firm</a></p>
+                                            </div>
+                                            <!-- End User Information -->
+                                        </div>
+                                        <!-- End Testimonial -->
+                                        <!-- Testimonial -->
+                                        <div class="item">
+                                            <!-- Quote -->
+                                            <div class="quote">
+                                                <p>Porro repellat vero sapiente amet vitae quibusdam necessitatibus consectetur, labore totam. Accusamus perspiciatis asperiores labore esse.</p>
+                                            </div>
+                                            <!-- End Quote -->
+                                            <!-- Media -->
+                                            <div class="media"> <img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker4.jpg" width="80" height="80" alt="Signature Theme"></div>
+                                            <!-- End Media -->
+                                            <!-- User Information -->
+                                            <div class="user-information">
+                                                <h4 class="uppercase">Albert Clinton</h4>
+                                                <p class="company">Designer at&nbsp;&nbsp;&nbsp;<a href="#">Jobify</a></p>
+                                            </div>
+                                            <!-- End User Information -->
+                                        </div>
+                                        <!-- End Testimonial -->
+                                        <!-- Testimonial -->
+                                        <div class="item">
+                                            <!-- Quote -->
+                                            <div class="quote">
+                                                <p>Quos, non, esse eligendi ab accusantium voluptatem. Maxime eligendi beatae, atque tempora ullam. Vitae delectus quia.</p>
+                                            </div>
+                                            <!-- End Quote -->
+                                            <!-- Media -->
+                                            <div class="media"> <img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker3.jpg" width="80" height="80" alt="Signature Theme"></div>
+                                            <!-- End Media -->
+                                            <!-- User Information -->
+                                            <div class="user-information">
+                                                <h4 class="uppercase">Hillary Doe</h4>
+                                                <p class="company">Designer at&nbsp;&nbsp;&nbsp;<a href="#">Linkedin</a></p>
+                                            </div>
+                                            <!-- End User Information -->
+                                        </div>
+                                        <!-- End Testimonial -->
+                                        <!-- Testimonial -->
+                                        <div class="item">
+                                            <!-- Quote -->
+                                            <div class="quote">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est voluptatem accusamus.</p>
+                                            </div>
+                                            <!-- End Quote -->
+                                            <!-- Media -->
+                                            <div class="media"> <img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker2.jpg" width="80" height="80" alt="Signature Theme"></div>
+                                            <!-- End Media -->
+                                            <!-- User Information -->
+                                            <div class="user-information">
+                                                <h4 class="uppercase">Christina Doe</h4>
+                                                <p class="company">Designer at&nbsp;&nbsp;&nbsp;<a href="#">Ninetheme</a></p>
+                                            </div>
+                                            <!-- End User Information -->
+                                        </div>
+                                        <!-- End Testimonial -->
+                                        <!-- Testimonial -->
+                                        <div class="item">
+                                            <!-- Quote -->
+                                            <div class="quote">
+                                                <p>Porro repellat vero sapiente amet vitae quibusdam necessitatibus consectetur, labore totam. Accusamus perspiciatis asperiores labore esse.</p>
+                                            </div>
+                                            <!-- End Quote -->
+                                            <!-- Media -->
+                                            <div class="media"> <img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker1.jpg" width="80" height="80" alt="Signature Theme"></div>
+                                            <!-- End Media -->
+                                            <!-- User Information -->
+                                            <div class="user-information">
+                                                <h4 class="uppercase">Adam Doe</h4>
+                                                <p class="company">Designer at&nbsp;&nbsp;&nbsp;<a href="#">Twitter</a></p>
+                                            </div>
+                                            <!-- End User Information -->
+                                        </div>
+                                        <!-- End Testimonial -->
+                                        <!-- Testimonial -->
+                                        <div class="item">
+                                            <!-- Quote -->
+                                            <div class="quote">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est voluptatem accusamus.</p>
+                                            </div>
+                                            <!-- End Quote -->
+                                            <!-- Media -->
+                                            <div class="media"> <img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/speaker5.jpg" width="80" height="80" alt="Signature Theme"></div>
+                                            <!-- End Media -->
+                                            <!-- User Information -->
+                                            <div class="user-information">
+                                                <h4 class="uppercase">John Doe</h4>
+                                                <p class="company">Designer at&nbsp;&nbsp;&nbsp;<a href="#">Firm</a></p>
+                                            </div>
+                                            <!-- End User Information -->
+                                        </div>
+                                        <!-- End Testimonial -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Section -->
+                </div>
+            </div>
+        </div>
+        <div class="vc_row wpb_row vc_row-fluid">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="wpb_wrapper">
+                    <!-- Section -->
+                    <section id="section" class="section"><img class="image-responsive" src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/demo-scene.png" alt="Signature Theme">
+                        <div class="container">
+                            <h2 class="thin margin-bottom-small">Are you ready for your best experience ?</h2>
+                            <div class="row">
+                                <div class="c-9">
+                                    <p>But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. </p>
+                                </div>
+                                <div class="c-3 align-right"> <a href="#" target=" _blank" class="btn large scroll">TRY NOW</a></div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Section -->
+                </div>
+            </div>
+        </div>
+        <div class="vc_row wpb_row vc_row-fluid">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="wpb_wrapper">
+                    <!-- Section -->
+                    <section id="countnumber" class="grey section">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Counter -->
+                                <div class="c-3">
+                                    <div class="counter light"><i class="icon-profile-male"></i>
+                                        <h2 style="font-size: 40px;" class="counter-number">495</h2>
+                                        <p class="counter-info">GUESTS</p>
+                                    </div>
+                                </div>
+                                <!-- End Counter -->
+                                <!-- Counter -->
+                                <div class="c-3">
+                                    <div class="counter light"><i class="icon-mic"></i>
+                                        <h2 style="font-size: 40px;" class="counter-number">48</h2>
+                                        <p class="counter-info">SPEAKERS</p>
+                                    </div>
+                                </div>
+                                <!-- End Counter -->
+                                <!-- Counter -->
+                                <div class="c-3">
+                                    <div class="counter light"><i class="icon-envelope"></i>
+                                        <h2 style="font-size: 40px;" class="counter-number">4,188</h2>
+                                        <p class="counter-info">SUBSCRIBERS</p>
+                                    </div>
+                                </div>
+                                <!-- End Counter -->
+                                <!-- Counter -->
+                                <div class="c-3">
+                                    <div class="counter light"><i class="icon-basket"></i>
+                                        <h2 style="font-size: 40px;" class="counter-number">840</h2>
+                                        <p class="counter-info">PRODUCTS SOLD</p>
+                                    </div>
+                                </div>
+                                <!-- End Counter -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Section -->
+                </div>
+            </div>
+        </div>
+        <div class="vc_row wpb_row vc_row-fluid">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="wpb_wrapper">
+                    <!-- Section -->
+                    <section id="features" class="section dark">
+                        <div class="container">
+                            <!-- Title -->
+                            <div class="title large dark"> <span>06</span>
+                                <h2 class="uppercase">FEATURES</h2>
+                                <p class="subtitle">Eius repellat natus minima quam ipsa maxime, et error recusandae dolorem blanditiis optio distinctio non placeat omnis culpa ratione quisquam voluptatibus tempora.</p>
+                            </div>
+                            <!-- End Title -->
+                            <!-- Feature -->
+                            <div class="feature c-3">
+                                <div class="icon"> <i class="icon-circle-compass"></i> </div>
+                                <h5 class="feature-title">Crafted with care</h5>
+                                <p>This theme was forged from a signle golden idea that can help you to grow your business</p>
+                            </div>
+                            <!-- End Feature -->
+                            <!-- Feature -->
+                            <div class="feature c-3">
+                                <div class="icon"> <i class="icon-tools"></i> </div>
+                                <h5 class="feature-title">Efficient Development</h5>
+                                <p>Being effective without wasting time or expense is the best practice that a developer can do</p>
+                            </div>
+                            <!-- End Feature -->
+                            <!-- Feature -->
+                            <div class="feature c-3">
+                                <div class="icon"> <i class="icon-dial"></i> </div>
+                                <h5 class="feature-title">Efficient Development</h5>
+                                <p>This is the best business, whether you want to connect with people socially or to build connections for work</p>
+                            </div>
+                            <!-- End Feature -->
+                            <!-- Feature -->
+                            <div class="feature c-3">
+                                <div class="icon"> <i class="icon-lightbulb"></i> </div>
+                                <h5 class="feature-title">Connect Global with Local</h5>
+                                <p>Signature conferences are intellectually and discursively open places, they connect the global with local</p>
+                            </div>
+                            <!-- End Feature -->
+                        </div>
+                    </section>
+                    <!-- End Section -->
+                </div>
+            </div>
+        </div>
+        <div class="vc_row wpb_row vc_row-fluid">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="wpb_wrapper">
+                    <!-- Section -->
+                    <section id="accomodation" class="section">
+                        <div class="container">
+                            <!-- Title -->
+                            <div class="title large"> <span>07</span>
+                                <h2 class="uppercase">ACCOMODATION</h2>
+                                <p class="subtitle">Eius repellat natus minima quam ipsa maxime, et error recusandae dolorem blanditiis optio distinctio non placeat omnis culpa ratione quisquam voluptatibus tempora.</p>
+                            </div>
+                            <!-- End Title -->
+                            <div class="row">
+                                <!-- Accomodation -->
+                                <div class="c-4 accomodation">
+                                    <div class="accomodation-media"> <img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/accomodation3.jpg" alt="Signature Theme" class="image-responsive"> <a href="http://www.booking.com" class="btn medium light">DETAILS</a>
+                                        <!-- Accomodation Info -->
+                                        <div class="accomodation-meta">
+                                            <p>From $430 per night</p> <span class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i>  </span> </div>
+                                        <!-- End Accomodation Info -->
+                                    </div>
+                                    <h3>Plaza Grand Hotel</h3>
+                                    <p>Te nostrud inimicus efficiantur ius, sit id nulla quando, tantas nemore ne per.</p>
+                                </div>
+                                <!-- End Accomodation -->
+                                <!-- Accomodation -->
+                                <div class="c-4 accomodation">
+                                    <div class="accomodation-media"> <img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/accomodation2.jpg" alt="Signature Theme" class="image-responsive"> <a href="http://www.booking.com" class="btn medium light">DETAILS</a>
+                                        <!-- Accomodation Info -->
+                                        <div class="accomodation-meta">
+                                            <p>From $430 per night</p> <span class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>  </span> </div>
+                                        <!-- End Accomodation Info -->
+                                    </div>
+                                    <h3>Plaza Grand Hotel</h3>
+                                    <p>Te nostrud inimicus efficiantur ius, sit id nulla quando, tantas nemore ne per.</p>
+                                </div>
+                                <!-- End Accomodation -->
+                                <!-- Accomodation -->
+                                <div class="c-4 accomodation">
+                                    <div class="accomodation-media"> <img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/accomodation1.jpg" alt="Signature Theme" class="image-responsive"> <a href="http://www.booking.com" class="btn medium light">DETAILS</a>
+                                        <!-- Accomodation Info -->
+                                        <div class="accomodation-meta">
+                                            <p>From $430 per night</p> <span class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>  </span> </div>
+                                        <!-- End Accomodation Info -->
+                                    </div>
+                                    <h3>Costa Brava Maritim</h3>
+                                    <p>Te nostrud inimicus efficiantur ius, sit id nulla quando, tantas nemore ne per.</p>
+                                </div>
+                                <!-- End Accomodation -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Section -->
+                </div>
+            </div>
+        </div>
+        <div class="vc_row wpb_row vc_row-fluid">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="wpb_wrapper">
+                    <!-- Section -->
+                    <section id="sponsor" class="section grey">
+                        <div class="container">
+                            <!-- Title -->
+                            <div class="title large grey"> <span>08</span>
+                                <h2 class="uppercase">SPONSORS</h2>
+                                <p class="subtitle">Eius repellat natus minima quam ipsa maxime, et error recusandae dolorem blanditiis optio distinctio non placeat omnis culpa ratione quisquam voluptatibus tempora.</p>
+                            </div>
+                            <!-- End Title -->
+                            <div class="row">
+                                <!-- Sponsor -->
+                                <div class="c-4 sponsor">
+                                    <div class="align-center"><img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/sponsor1.png" alt="Signature Theme"> </div>
+                                </div>
+                                <!-- End Sponsor -->
+                                <!-- Sponsor -->
+                                <div class="c-4 sponsor">
+                                    <div class="align-center"><img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/sponsor2.png" alt="Signature Theme"> </div>
+                                </div>
+                                <!-- End Sponsor -->
+                                <!-- Sponsor -->
+                                <div class="c-4 sponsor">
+                                    <div class="align-center"><img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/sponsor3.png" alt="Signature Theme"> </div>
+                                </div>
+                                <!-- End Sponsor -->
+                                <!-- Sponsor -->
+                                <div class="c-4 sponsor">
+                                    <div class="align-center"><img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/sponsor4.png" alt="Signature Theme"> </div>
+                                </div>
+                                <!-- End Sponsor -->
+                                <!-- Sponsor -->
+                                <div class="c-4 sponsor">
+                                    <div class="align-center"><img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/sponsor5.png" alt="Signature Theme"> </div>
+                                </div>
+                                <!-- End Sponsor -->
+                                <!-- Sponsor -->
+                                <div class="c-4 sponsor">
+                                    <div class="align-center"><img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/11/sponsor6.png" alt="Signature Theme"> </div>
+                                </div>
+                                <!-- End Sponsor -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Section -->
+                </div>
+            </div>
+        </div>
+        <div class="vc_row wpb_row vc_row-fluid">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="wpb_wrapper">
+                    <!-- Section -->
+                    <section id="contact" class="section contact-section">
+                        <div class="container">
+                            <!-- Title -->
+                            <div class="title large"><span>09</span>
+                                <h2 class="uppercase">GET IN TOUCH</h2>
+                                <p class="subtitle">Eius repellat natus minima quam ipsa maxime, et error recusandae dolorem blanditiis optio distinctio non placeat omnis culpa ratione quisquam voluptatibus tempora.</p>
+                            </div>
+                            <div class="row">
+                                <div class="c-4">
+                                    <div class="contact-item">
+                                        <div class="icon"><i class="icon-map"></i></div>
+                                        <h5>Address Information</h5>
+                                        <p>932 Nostrand Avenue, Brooklyn, NY 11225</p>
+                                    </div>
+                                    <!-- Contact Item -->
+                                    <!-- Contact Item -->
+                                    <div class="contact-item">
+                                        <div class="icon"><i class="icon-envelope"></i></div>
+                                        <h5>Email Address</h5><a href="mailto:hello&amp;welcome@yourweb.com">hello&amp;welcome@yourweb.com</a></div>
+                                    <!-- Contact Item -->
+                                    <!-- Contact Item -->
+                                    <div class="contact-item">
+                                        <div class="icon"><i class="icon-megaphone"></i></div>
+                                        <h5>Free Call</h5>
+                                        <p>0800 981 22319</p>
+                                    </div>
+                                    <!-- Contact Item -->
+                                </div>
+                                <!-- End Contact Information -->
+                                <!-- Contact Form -->
+                                <div class="c-8 no-margin">
+                                    <div role="form" class="wpcf7" id="wpcf7-f76-p755-o1" lang="en-US" dir="ltr">
+                                        <div class="screen-reader-response"></div>
+                                        <form action="/themes/signature/#wpcf7-f76-p755-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                                            <div style="display: none;">
+                                                <input type="hidden" name="_wpcf7" value="76" />
+                                                <input type="hidden" name="_wpcf7_version" value="4.3.1" />
+                                                <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f76-p755-o1" />
+                                                <input type="hidden" name="_wpnonce" value="240d73e66f" />
+                                            </div>
+                                            <div class="contact-form">
+                                                <div class="c-6">
+                                                    <div class="row">
+                                                        <span class="wpcf7-form-control-wrap text"><input type="text" name="text" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required c-12" aria-required="true" aria-invalid="false" placeholder="Name" /></span>
+                                                        <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email c-12" id="email" aria-required="true" aria-invalid="false" placeholder="Email Address" /></span>
+                                                        <span class="wpcf7-form-control-wrap subject"><input type="text" name="subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required c-12" aria-required="true" aria-invalid="false" placeholder="Subject" /></span>
+                                                    </div>
+                                                </div>
+                                                <div class="c-6">
+                                                    <span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required required" id="message" aria-required="true" aria-invalid="false" placeholder="Message"></textarea></span>
+                                                </div>
+                                                <div class="c-12 align-right">
+                                                    <div class="row">
+                                                        <div class="c-6 nopadding">
+                                                        </div>
+                                                        <div class="c-6">
+                                                            <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit btn medium" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- End Contact Form -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Section -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="section dark no-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="c-4">
+
+                        <div class="logo">
+                            <a href="http://ninetheme.com/themes/signature/"><img src="http://ninetheme.com/themes/signature/wp-content/uploads/2015/12/logo-light.png" alt="Signature Theme"></a>
+                            <!-- Your Logo -->
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, in iusto debitis itaque nihil, necessitatibus enim deserunt quae provident maiores, error ullam mollitia expedita.</p>
+                    </div>
+
+                    <div class="c-3">
+                        <h5 class="uppercase margin-bottom-small">Latest News</h5>
+                        <ul class="links light">
+                            <li><a href="http://ninetheme.com/themes/signature/index.php/blog/">Our Blog</a></li>
+                            <li><a href="#">Payment Information</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="c-5">
+
+                        <div role="form" class="wpcf7" id="wpcf7-f152-o2" lang="en-US" dir="ltr">
+                            <div class="screen-reader-response"></div>
+                            <form action="/themes/signature/#wpcf7-f152-o2" method="post" class="wpcf7-form" novalidate="novalidate">
+                                <div style="display: none;">
+                                    <input type="hidden" name="_wpcf7" value="152" />
+                                    <input type="hidden" name="_wpcf7_version" value="4.3.1" />
+                                    <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f152-o2" />
+                                    <input type="hidden" name="_wpnonce" value="7b57d33af3" />
+                                </div>
+                                <h5 class="uppercase margin-bottom-small">Subscribe to newsletter</h5>
+                                <p>Stay up to date with our latest news</p>
+
+                                <div class="subscribe light nopadding">
+
+                                    <div>
+                                        <span class="wpcf7-form-control-wrap text-412"><input type="text" name="text-412" value="" size="40" class="wpcf7-form-control wpcf7-text required" id="subscribe" aria-invalid="false" placeholder="Email Address" /></span>
+                                        <i class="fa fa-paper-plane"></i>
+                                        <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit submitte" />
+                                    </div>
+
+                                </div>
+                                <div class="wpcf7-response-output wpcf7-display-none"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="copyright">
+
+                            <div class="c-6">
+                                <p>© 2015 Signature Theme. crafted with care by <a href="http://themeforest.net/user/ninetheme">Ninetheme</a></p>
+                            </div>
+                            <div class="c-6 align-right">
+                                <!-- Social Icons -->
+                                <nav class="social-icons">
+                                    <a href="#" class="fa fa-facebook"></a>
+                                    <a href="#" class="fa fa-twitter"></a>
+                                    <a href="http://instagram" class="fa fa-instagram"></a>
+                                </nav>
+                                <!-- End Social Icons -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+    </div>
+    <div role="form" class="wpcf7" id="wpcf7-f151-o3" lang="en-US" dir="ltr">
+        <div class="screen-reader-response"></div>
+        <form action="/themes/signature/#wpcf7-f151-o3" method="post" class="wpcf7-form" novalidate="novalidate">
+            <div style="display: none;">
+                <input type="hidden" name="_wpcf7" value="151" />
+                <input type="hidden" name="_wpcf7_version" value="4.3.1" />
+                <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f151-o3" />
+                <input type="hidden" name="_wpnonce" value="7b9c465a3b" />
+            </div>
+            <div class="registration-form light">
+                <div class="registration-wrapper">
+                    <a href="#" class="close"><i class="fa fa-times"></i></a>
+                    <h3 class="uppercase">Register</h3>
+                    <p>These cases are perfectly simple and easy to distinguish.</p>
+                    <div class="form">
+                        <div>
+                            <label for="registration-name">Name *</label>
+                            <span class="wpcf7-form-control-wrap text-774"><input type="text" name="text-774" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" id="registration-name" aria-required="true" aria-invalid="false" /></span>
+                        </div>
+                        <div>
+                            <label for="registration-email">Email Address *</label>
+                            <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email required" id="registration-email" aria-required="true" aria-invalid="false" /></span>
+                        </div>
+                        <div>
+                            <label for="registration-phone">Phone *</label>
+                            <span class="wpcf7-form-control-wrap text"><input type="text" name="text" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required" id="registration-phone" aria-required="true" aria-invalid="false" /></span>
+                        </div>
+                        <div>
+                            <label for="registration-type">Registration Type</label>
+                            <div class="select"><span class="wpcf7-form-control-wrap registration-type"><select name="registration-type" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" id="registration-type" aria-required="true" aria-invalid="false"><option value="Individual - $99">Individual - $99</option><option value="Startup - $189">Startup - $189</option><option value="Company - $389">Company - $389</option></select></span></div>
+                        </div>
+                        <div>
+                            <input type="submit" value="Register now" class="wpcf7-form-control wpcf7-submit btn medium color" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wpcf7-response-output wpcf7-display-none"></div>
+        </form>
+    </div>
+    <a href="#" class="to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var _wpcf7 = {
+            "loaderUrl": "http:\/\/ninetheme.com\/themes\/signature\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif",
+            "recaptchaEmpty": "Please verify that you are not a robot.",
+            "sending": "Sending ..."
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.3.1'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-includes/js/comment-reply.min.js?ver=4.3.2'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/themes/signature/js/modernizr-2.8.3.min.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/themes/signature/js/bootstrap.min.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/themes/signature/js/jquery.flexslider.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/themes/signature/js/components/owl.carousel.min.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/themes/signature/js/components/parallax.min.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/themes/signature/js/components/jquery.magnific-popup.min.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/themes/signature/js/components/countdown.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/themes/signature/js/imagesloaded.pkgd.min.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/themes/signature/js/components/masonry.min.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/themes/signature/js/components/waypoints.min.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/themes/signature/js/components/counterup.min.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/themes/signature/js/main.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-content/plugins/vc_composer_4_8_1/assets/js/js_composer_front.js?ver=4.8.1'></script>
+
+</body>
+
+</html>
