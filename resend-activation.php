@@ -125,7 +125,7 @@ echo "
 
 echo resultBlock($errors,$successes);
 
-echo "<div id='regbox'>";
+
 
 //Show disabled if email activation not required
 if(!$emailActivation)
@@ -159,7 +159,7 @@ else
 
 echo "
 </div>           
-</div>
+
 <div id='bottom'></div>
 </div>
 </body>
