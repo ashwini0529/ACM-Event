@@ -71,6 +71,7 @@ echo "
     <link rel='stylesheet' id='ninetheme_signature_flexslidercss-css' href='http://ninetheme.com/themes/signature/wp-content/themes/signature/css/flexslider.css?ver=1.0' type='text/css' media='all' />
     <link rel='stylesheet' id='ninetheme_signature_fonts-load-css' href='//fonts.googleapis.com/css?family=Open%2BSans%7CLato%7CRoboto%3A700%2C300%2C600%2C400%2C500&#038;ver=1.0.0' type='text/css' media='all' />
     <link rel='stylesheet' id='style-css' href='http://ninetheme.com/themes/signature/wp-content/themes/signature/style.css?ver=4.3.2' type='text/css' media='all' />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
     <link rel='stylesheet' id='js_composer_front-css' href='//ninetheme.com/themes/signature/wp-content/uploads/js_composer/js_composer_front_custom.css?ver=4.8.1' type='text/css' media='all' />
     <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
     <script type='text/javascript' src='http://ninetheme.com/themes/signature/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>

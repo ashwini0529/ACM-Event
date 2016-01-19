@@ -82,6 +82,7 @@ if(!empty($_POST))
 
 require_once("models/header.php");
 echo "
+
 <body>
 <div id='wrapper'>
 <div id='top'><div id='logo'></div></div>
@@ -99,42 +100,46 @@ echo "
 echo resultBlock($errors,$successes);
 
 echo "
-<div id='regbox'>
-<form name='newUser' action='".$_SERVER['PHP_SELF']."' method='post'>
+<div class='container' >
+
+<div id='regbox'  class='c-5'>
+<form name='newUser' class='wpcf7-form' action='".$_SERVER['PHP_SELF']."' method='post'>
 
 <p>
-<label>User Name:</label>
-<input type='text' name='username' />
+<span class='wpcf7-form-control-wrap text-412'><input placeholder='User Name'size='40' class='wpcf7-form-control wpcf7-text required' type='text' name='username' /></span>
 </p>
 <p>
-<label>Display Name:</label>
-<input type='text' name='displayname' />
+
+<span class='wpcf7-form-control-wrap text-412'><input placeholder='Display Name' size='40' class='wpcf7-form-control wpcf7-text required' type='text' name='displayname' /></span>
 </p>
 <p>
-<label>Password:</label>
-<input type='password' name='password' />
+
+<span class='wpcf7-form-control-wrap text-412'><input placeholder='Password' size='40' class='wpcf7-form-control wpcf7-text required' type='password' name='password' /></span>
 </p>
 <p>
-<label>Confirm:</label>
-<input type='password' name='passwordc' />
+
+<span class='wpcf7-form-control-wrap text-412'><input placeholder='Confirm Password' size='40' class='wpcf7-form-control wpcf7-text required' type='password' name='passwordc' /></span>
 </p>
 <p>
-<label>Email:</label>
-<input type='text' name='email' />
+
+<span class='wpcf7-form-control-wrap text-412'><input placeholder='Email' size='40' class='wpcf7-form-control wpcf7-text required' type='text' name='email' /></span>
 </p>
 <p>
 <label>Security Code:</label>
 <img src='models/captcha.php'>
 </p>
-<label>Enter Security Code:</label>
-<input name='captcha' type='text'>
+
+<span class='wpcf7-form-control-wrap text-412'><input placeholder='Enter Security Code' size='40' class='wpcf7-form-control wpcf7-text required' name='captcha' type='text'></span>
 </p>
 <label>&nbsp;<br>
-<input type='submit' value='Register'/>
+<input type='submit' class='wpcf7-form-control wpcf7-submit submitte' value='Register'/>
 </p>
 
 </form>
 </div>
+</div>
+</div>
+
 
 </div>
 <div id='bottom'></div>

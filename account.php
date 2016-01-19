@@ -30,7 +30,7 @@ Hey, $loggedInUser->displayname. This is an example secure page designed to demo
 </div>
 
 
-</body>
+</body class='home page page-id-755 page-template page-template-unlimited-page page-template-unlimited-page-php wpb-js-composer js-comp-ver-4.8.1 vc_responsive'>
 </html>";
 
 
