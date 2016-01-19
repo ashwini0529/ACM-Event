@@ -46,6 +46,7 @@ Import /database/events.sql file in PhpMyAdmin.
 Type localhost/{project name} in your Browser Address Bar.
 ```
 
+Made with ❤ by : Ashwini Purohit(Complete Backend) & Rishi Raj(Complette Frontend)
 
 ### Development
 
