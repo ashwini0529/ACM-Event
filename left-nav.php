@@ -22,12 +22,12 @@ if(isUserLoggedIn()) {
 	if ($loggedInUser->checkPermission(array(2))){
 	echo "
 	<ul>
-	<li><a href='admin_configuration.php'>Admin Configuration</a></li>
-	<li><a href='admin_users.php'>Admin Users</a></li>
-	<li><a href='admin_permissions.php'>Admin Permissions</a></li>
-	<li><a href='admin_pages.php'>Admin Pages</a></li>
-	<li><a href='admin_addQuestion.php'>Add Question</a></li>
-	<li><a href='admin_updateMarks.php'>Update marks</a></li>
+	<li class='btn small load-speaker-list'><i class='fa icon-caret-right'></i><a style='color:white' href='admin_configuration.php'>Admin Configuration</a></li>
+	<li class='btn small load-speaker-list'><i class='fa icon-caret-right'></i><a style='color:white' href='admin_users.php'>Admin Users</a></li>
+	<li class='btn small load-speaker-list'><i class='fa icon-caret-right'></i><a style='color:white' href='admin_permissions.php'>Admin Permissions</a></li>
+	<li class='btn small load-speaker-list'><i class='fa icon-caret-right'></i><a style='color:white' href='admin_pages.php'>Admin Pages</a></li>
+	<li class='btn small load-speaker-list'><i class='fa icon-caret-right'></i><a style='color:white' href='admin_addQuestion.php'>Add Question</a></li>
+	<li class='btn small load-speaker-list'><i class='fa icon-caret-right'></i><a style='color:white' href='admin_updateMarks.php'>Update marks</a></li>
 	
 
 	</ul>";
@@ -36,14 +36,15 @@ if(isUserLoggedIn()) {
 //Links for users not logged in
 else {
 	echo "
-	<ul>
-	<li><a href='index.php'>Home</a></li>
-	<li><a href='login.php'>Login</a></li>
-	<li><a href='register.php'>Register</a></li>
-	<li><a href='forgot-password.php'>Forgot Password</a></li>";
+	<ul class='nav nav-pills'>
+	<li  class='btn small load-speaker-list' ><i class='fa icon-caret-right'></i><a style='color:white' href='index.php'>Home</a></li>
+	<li  class='btn small load-speaker-list' ><i class='fa icon-caret-right'></i><a style='color:white' href='login.php'>Login</a></li>
+	<li  class='btn small load-speaker-list' ><i class='fa icon-caret-right'></i><a style='color:white' href='register.php'>Register</a></li>
+	<li  class='btn small load-speaker-list' ><i class='fa icon-caret-right'></i><a style='color:white' href='forgot-password.php'>Forgot Password</a></li>";
+	
 	if ($emailActivation)
 	{
-	echo "<li><a href='resend-activation.php'>Resend Activation Email</a></li>";
+	echo "<li  class='btn small load-speaker-list'><i class='fa icon-caret-right'></i><a style='color:white' href='resend-activation.php'>Resend Activation Email</a></li>";
 	}
 	echo "</ul>";
 }

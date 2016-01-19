@@ -83,12 +83,6 @@ if(!empty($_POST))
 require_once("models/header.php");
 echo "
 
-<body>
-<div id='wrapper'>
-<div id='top'><div id='logo'></div></div>
-<div id='content'>
-<h1> </h1>
-<h2>Register</h2>
 
 <div id='left-nav'>";
 include("left-nav.php");
@@ -101,39 +95,29 @@ echo resultBlock($errors,$successes);
 
 echo "
 <div class='container' >
-
+ 
+<h2>Register</h2>
 <div id='regbox'  class='c-5'>
 <form name='newUser' class='wpcf7-form' action='".$_SERVER['PHP_SELF']."' method='post'>
 
-<p>
 <span class='wpcf7-form-control-wrap text-412'><input placeholder='User Name'size='40' class='wpcf7-form-control wpcf7-text required' type='text' name='username' /></span>
-</p>
-<p>
 
 <span class='wpcf7-form-control-wrap text-412'><input placeholder='Display Name' size='40' class='wpcf7-form-control wpcf7-text required' type='text' name='displayname' /></span>
-</p>
-<p>
-
 <span class='wpcf7-form-control-wrap text-412'><input placeholder='Password' size='40' class='wpcf7-form-control wpcf7-text required' type='password' name='password' /></span>
-</p>
-<p>
 
 <span class='wpcf7-form-control-wrap text-412'><input placeholder='Confirm Password' size='40' class='wpcf7-form-control wpcf7-text required' type='password' name='passwordc' /></span>
-</p>
-<p>
+
 
 <span class='wpcf7-form-control-wrap text-412'><input placeholder='Email' size='40' class='wpcf7-form-control wpcf7-text required' type='text' name='email' /></span>
-</p>
-<p>
+
 <label>Security Code:</label>
 <img src='models/captcha.php'>
-</p>
+
 
 <span class='wpcf7-form-control-wrap text-412'><input placeholder='Enter Security Code' size='40' class='wpcf7-form-control wpcf7-text required' name='captcha' type='text'></span>
-</p>
+
 <label>&nbsp;<br>
-<input type='submit' class='wpcf7-form-control wpcf7-submit submitte' value='Register'/>
-</p>
+<input type='submit' value='Register'/>
 
 </form>
 </div>

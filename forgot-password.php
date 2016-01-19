@@ -175,38 +175,38 @@ if(!empty($_POST))
 
 require_once("models/header.php");
 echo "
-<body>
-<div id='wrapper'>
-<div id='top'><div id='logo'></div></div>
-<div id='content'>
-<h1> </h1>
-<h2>Forgot Password</h2>
+
 <div id='left-nav'>";
 
 include("left-nav.php");
 
 echo "
 </div>
-<div id='main'>";
+<div id='main'>
+<h2>Forgot Password</h2>";
 
 echo resultBlock($errors,$successes);
 
 echo "
-<div id='regbox'>
+<div class='container' >
+
+<div id='regbox'  class='c-5'>
+
 <form name='newLostPass' action='".$_SERVER['PHP_SELF']."' method='post'>
-<p>
+
 <label>Username:</label>
-<input type='text' name='username' />
-</p>
-<p>    
+<span class='wpcf7-form-control-wrap text-412'><input placeholder='User Name' size='40' 
+class='wpcf7-form-control wpcf7-text required'type='text' name='username' /></span>
+    
 <label>Email:</label>
-<input type='text' name='email' />
-</p>
-<p>
+<span class='wpcf7-form-control-wrap text-412'><input placeholder='Email' size='40' 
+class='wpcf7-form-control wpcf7-text required'type='text' name='email' /></span>
+
 <label>&nbsp;</label>
-<input type='submit' value='Submit' class='submit' />
-</p>
+<input  type='submit' value='Submit' class='submit' />
+
 </form>
+</div>
 </div>
 </div>
 <div id='bottom'></div>

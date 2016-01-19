@@ -125,8 +125,21 @@ echo "
     </noscript>
 
 <link href=''.$template.'' rel='stylesheet' type='text/css' />
+<link href='models/site-templates/default.css' rel='stylesheet' type='text/css' />
 <script src='models/funcs.js' type='text/javascript'>
 </script>
-</head>";
+</head>
+<body>
+<div id='wrapper' class='container'>
+<div id='top'>
+<img src='Website/logo.png' class='image-responsive' style='max-width:10%;margin:auto;'>
+    <h1 class='uppercase'>
+    Welcome to <b> CodeBurst. </b> </h1> 
+    <br>
+    <h5>Ready, Steady, Code! </h5>
+</div>
+<div id='content'>
+
+<h2>2.00</h2>";
 
 ?>

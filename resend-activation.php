@@ -114,19 +114,14 @@ if(isUserLoggedIn()) { header("Location: account.php"); die(); }
 require_once("models/header.php");
 
 echo "
-<body>
-<div id='wrapper'>
-<div id='top'><div id='logo'></div></div>
-<div id='content'>
-<h1> </h1>
-<h2>Resend Activation</h2>
 <div id='left-nav'>";
 
 include("left-nav.php");
 
 echo "
 </div>
-<div id='main'>";
+<div id='main'>
+<h2>Resend Activation Email</h2>";
 
 echo resultBlock($errors,$successes);
 
@@ -139,20 +134,27 @@ if(!$emailActivation)
 }
 else
 {
-	echo "<form name='resendActivation' action='".$_SERVER['PHP_SELF']."' method='post'>
-	<p>
+	echo "
+
+<div class='container' >
+
+<div id='regbox'  class='c-5'>
+<form name='resendActivation' action='".$_SERVER['PHP_SELF']."' method='post'>
+	
 	<label>Username:</label>
-	<input type='text' name='username' />
-        </p>     
+	<span class='wpcf7-form-control-wrap text-412'><input  placeholder='User Name'size='40' class='wpcf7-form-control wpcf7-text required' type='text' name='username' /></span>
+             
         <p>
         <label>Email:</label>
-        <input type='text' name='email' />
+        <span class='wpcf7-form-control-wrap text-412'><input  placeholder='Email'size='40' class='wpcf7-form-control wpcf7-text required' type='text' name='email' /></span>
         </p>    
         <p>
         <label>&nbsp;</label>
-        <input type='submit' value='Submit' class='submit' />
+        <input  type='submit' value='Submit' class='submit' />
         </p>
-        </form>";
+        </form>
+        </div>
+        </div>";
 }
 
 echo "

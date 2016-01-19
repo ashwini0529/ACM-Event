@@ -84,29 +84,29 @@ if(!empty($_POST))
 require_once("models/header.php");
 
 echo "
-<body>
-<div id='wrapper'>
-<div id='top'><div id='logo'></div></div>
-<div id='content'>
-<h1> </h1>
-<h2>Login</h2>
+
 <div id='left-nav'>";
 
 include("left-nav.php");
 
 echo "
 </div>
-<div id='main'>";
+<div id='main'>
+<h2>Login</h2>";
 
 echo resultBlock($errors,$successes);
 
 echo "
-<div id='regbox'>
+
+<div class='container' >
+
+<div id='regbox'  class='c-5'>
 <form name='login' class='wpcf7-form' action='".$_SERVER['PHP_SELF']."' method='post'>
 <p>
 
-<span class='wpcf7-form-control-wrap text'><input type='text' 
-size='40' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required c-12' aria-invalid='false' placeholder='Username' aria-required='true' name='username' /></span>
+<span class='wpcf7-form-control-wrap text'>	
+<label>User Name:</label><input type='text' 
+size='40' class='wpcf7-form-control wpcf7-text  c-12' aria-invalid='false' placeholder='Username' aria-required='true' name='username' /></span>
 </p>
 <p>
 <label>Password:</label>
@@ -114,9 +114,10 @@ size='40' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required c-12'
 </p>
 <p>
 <label>&nbsp;</label>
-<input class='wpcf7-form-control wpcf7-submit submitte' type='submit' value='Login' class='submit' />
+<input  type='submit' value='Login' class='submit' />
 </p>
 </form>
+</div>
 </div>
 </div>
 <div id='bottom'></div>
