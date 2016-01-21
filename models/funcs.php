@@ -1444,6 +1444,7 @@ function letsBuildLeaderBoard(){
 	<p>Full Name : '.$displayName.'</p><br>
 	<p>Total Marks : '.$totalMarks.'</p><br>
 	<p>Questions Attempted : '.$questionsAttempted.'</p><br>
+	<p><a href = "userProfile.php?user_id='.$id.'">Click here to see profile...</a></p>
 	
 
 	<p>------------------------------------------------------------------------------<br>

@@ -134,7 +134,7 @@ echo "
 <div id='top'>
 <img src='Website/logo.png' class='image-responsive' style='max-width:10%;margin:auto;'>
     <h1 class='uppercase'>
-    Welcome to <b> CodeBurst. </b> </h1> 
+    Welcome to <b> 	CodeBurst. </b> </h1> 
     <br>
     <h5>Ready, Steady, Code! </h5>
 </div>
