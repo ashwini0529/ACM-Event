@@ -1,5 +1,5 @@
 <?php
 
-header ('Location:Website\ACM Site\codart');
+header ('Location:Website/ACM Site/codart');
 
 ?>
