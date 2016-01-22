@@ -32,7 +32,7 @@ echo "
 <script src='models/funcs.js' type='text/javascript'>
 </script>
 </head>
-<body>
+<body style='background:'>
 <div id='wrapper' class='container'>
 <div id='top' class='col-sm-12 col-xs-12 col-md-12 col-lg-12' style='text-align:center'>
 <img src='Website/logo.png' class='image-responsive' style='max-width:10%;margin:auto;'>
