@@ -9,8 +9,8 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 //Links for logged in user
 if(isUserLoggedIn()) {
 	echo "
-	<div class='container'>
-	<ul class='nav nav-pills'>
+	<div class='container' >
+	<ul class='nav nav-pills' style='text-align:center'>
 	<li><a href='account.php'>Account Home</a></li>
 	<li><a href='user_settings.php'>User Settings</a></li>
 	<li><a href='leaderboard.php'>Leaderboard</a></li>
@@ -22,8 +22,8 @@ if(isUserLoggedIn()) {
 	//Links for permission level 2 (default admin)
 	if ($loggedInUser->checkPermission(array(2))){
 	echo "
-	<div class='container'>
-	<ul class='nav nav-pills'>
+	<div class='container' >
+	<ul class='nav nav-pills' style='text-align:center'>
 	<li ><i class='fa icon-caret-right'></i><a  href='admin_configuration.php'>Admin Configuration</a></li>
 	<li ><i class='fa icon-caret-right'></i><a  href='admin_users.php'>Admin Users</a></li>
 	<li ><i class='fa icon-caret-right'></i><a  href='admin_permissions.php'>Admin Permissions</a></li>
@@ -38,18 +38,11 @@ if(isUserLoggedIn()) {
 //Links for users not logged in
 else {
 	echo "
-	<div class='container'>
-	<ul class='nav nav-pills'>
-	<li   ><i class='fa icon-caret-right'></i><a  href='index.php'>Home</a></li>
-	<li   ><i class='fa icon-caret-right'></i><a  href='login.php'>Login</a></li>
-	<li   ><i class='fa icon-caret-right'></i><a  href='register.php'>Register</a></li>
-	<li   ><i class='fa icon-caret-right'></i><a  href='forgot-password.php'>Forgot Password</a></li>";
+	<div class='container'  >
+	<ul class='nav nav-pills'  style='text-align:center'>
+	</ul>";
 	
-	if ($emailActivation)
-	{
-	echo "<li  ><i class='fa icon-caret-right'></i><a  href='resend-activation.php'>Resend Activation Email</a></li>";
-	}
-	echo "</ul></div>";
+	
 }
 
 ?>
