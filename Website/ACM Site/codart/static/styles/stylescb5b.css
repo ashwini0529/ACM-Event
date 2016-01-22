@@ -460,7 +460,7 @@ a.button, button.button {
   border: none;
   background: #ffca00;
   color: #1e3d55;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
   padding: 29px 35px 31px;
   text-align: center;
@@ -1338,7 +1338,7 @@ h1.logo {
         top: -2px;
         left: -96px; }
     .talk-list li h5 {
-      font-size: 1.15em;
+      font-size: 1.8em;
       line-height: 1.15em; }
     .talk-list li h6 {
       font-size: 1em;
@@ -2957,8 +2957,8 @@ h1.logo {
   line-height: 200%; }
   .section-footer small {
     display: block;
-    font-size: 14px;
-    color: #d3a91e; }
+    font-size: 18px;
+    color: #212121; }
   .section-footer p {
     color: #1e3d55;
     margin-top: 5px;

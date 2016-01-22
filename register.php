@@ -100,7 +100,7 @@ echo "
 
 <form class='form-horizontal' name='newUser'  action='".$_SERVER['PHP_SELF']."' method='post'>
   <fieldset>
-    <legend>Register</legend>
+    <legend style='text-align:center'>Register</legend>
     <div class='form-group'>
       <label for='inputEmail' class='col-lg-2 control-label'>User Name</label>
       <div class='col-lg-10'>
@@ -137,8 +137,8 @@ echo "
       </div>
     </div>
     <div class='form-group'>
-      <label for='inputPassword' class='col-lg-2 control-label'>Security Code</label>
-      <img src='models/captcha.php'>
+      <label for='inputPassword' class='col-lg-2 control-label'>Security Code <img src='models/captcha.php'></label>
+      
       <div class='col-lg-10'>
         <input class='form-control' placeholder='Enter Security Code'   name='captcha' type='text'>
         
