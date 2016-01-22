@@ -183,28 +183,39 @@ include("left-nav.php");
 echo "
 </div>
 <div id='main'>
-<h2>Forgot Password</h2>";
+";
 
 echo resultBlock($errors,$successes);
 
 echo "
 <div class='container' >
 
-<div id='regbox'  class='c-5'>
 
-<form name='newLostPass' action='".$_SERVER['PHP_SELF']."' method='post'>
-
-<label>Username:</label>
-<span class='wpcf7-form-control-wrap text-412'><input placeholder='User Name' size='40' 
-class='wpcf7-form-control wpcf7-text required'type='text' name='username' /></span>
+<form class='form-horizontal' name='newLostPass' action='".$_SERVER['PHP_SELF']."' method='post'>
+  <fieldset>
+    <legend>Forgot Password</legend>
+    <div class='form-group'>
+      <label for='inputEmail' class='col-lg-2 control-label'>User Name</label>
+      <div class='col-lg-10'>
+        <input type='text' class='form-control' type='text' 
+  placeholder='Username' aria-required='true' name='username'>
+      </div>
+    </div>
+    <div class='form-group'>
+      <label for='inputPassword' class='col-lg-2 control-label'>Email</label>
+      <div class='col-lg-10'>
+        <input class='form-control' placeholder='Email'   type='text' name='email'>
+        
+      </div>
+    </div>
     
-<label>Email:</label>
-<span class='wpcf7-form-control-wrap text-412'><input placeholder='Email' size='40' 
-class='wpcf7-form-control wpcf7-text required'type='text' name='email' /></span>
-
-<label>&nbsp;</label>
-<input  type='submit' value='Submit' class='submit' />
-
+    <div class='form-group'>
+      <div class='col-lg-10 col-lg-offset-2'>
+        
+        <button value='Submit' type='submit' class='btn btn-primary'>Submit</button>
+      </div>
+    </div>
+  </fieldset>
 </form>
 </div>
 </div>
@@ -215,3 +226,4 @@ class='wpcf7-form-control wpcf7-text required'type='text' name='email' /></span>
 </html>";
 
 ?>
+

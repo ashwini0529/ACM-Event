@@ -23,9 +23,11 @@ include("left-nav.php");
 echo fetchTotalMarks($loggedInUser->user_id);
 echo "
 </div>
-<div id='main'>
+
+<div class='container'>
 Hey, $loggedInUser->displayname. This is an example secure page designed to demonstrate some of the basic features of  . Just so you know, your title at the moment is $loggedInUser->title, and that can be changed in the admin panel. You registered this account on " . date("M d, Y", $loggedInUser->signupTimeStamp()) . ".
 </div>
+
 <div id='bottom'></div>
 </div>
 

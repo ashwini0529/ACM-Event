@@ -12,5 +12,5 @@ if(!isUserLoggedIn()) { header("Location: login.php"); die(); }
     // Build User Dashboard...
     letsBuildUserDashboard($loggedInUser->user_id);
     $userRank = getUserRank($loggedInUser->user_id);
-    echo 'Rank = '.$userRank;
+    echo '<b>Rank</b> = '.$userRank;
     

@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `acm_configuration` (
 --
 
 INSERT INTO `acm_configuration` (`id`, `name`, `value`) VALUES
-(1, 'website_name', 'CodeBurst'),
+(1, 'website_name', 'CoDart'),
 (2, 'website_url', 'localhost/'),
 (3, 'email', 'admin@acmvit.com'),
 (4, 'activation', 'false'),

@@ -145,7 +145,7 @@ function resultBlock($errors,$successes){
 	//Error block
 	if(count($errors) > 0)
 	{
-		echo "<div id='error'>
+		echo "<div class='alert alert-dismissible alert-danger'>
 		<a href='#' onclick=\"showHide('error');\">[X]</a>
 		<ul>";
 		foreach($errors as $error)
@@ -158,7 +158,7 @@ function resultBlock($errors,$successes){
 	//Success block
 	if(count($successes) > 0)
 	{
-		echo "<div id='success'>
+		echo "<div class='alert alert-dismissible alert-success'>
 		<a href='#' onclick=\"showHide('success');\">[X]</a>
 		<ul>";
 		foreach($successes as $success)
@@ -1225,15 +1225,22 @@ function fetchQuestions(){
 
 		
 	echo '
-	<br>
-	<p>Question Title : '.$questionTitle.'</p><br>
-	<p>Question Description : '.$questionDescription.'</p><br>
-	<p>Question Marks : '.$questionMarks.'</p><br>
-	<p>Question Type : '.$questionType.'</p><br>
-	<p>Question Posted By : '.$questionPostedBy.'</p><br>
+	<br><div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">'.$questionTitle.'</h3>
+  </div>
+  <div class="panel-body">
+    Question Description : '.$questionDescription.'</p><br>
+	Question Marks : '.$questionMarks.'</p><br>
+	Question Type : '.$questionType.'</p><br>
+	Question Posted By : '.$questionPostedBy.'</p><br>
 	<a href = "uploadSolution.php?id='.$id.'">Click here for details</a>
+  </div>
+</div>
+<br>
+	
 
-	<p>------------------------------------------------------------------------------<br>
+	
 
 
 	';
@@ -1303,14 +1310,86 @@ function letsBuildUserDashboard($id)
 	$stmt->execute();
 	$stmt->bind_result($id,$userName,$displayName,$email,$totalMarks,$questionsAttempted);
 	while ($stmt->fetch()){
-		echo '
-				USER ID: '.$id.'<br>
-				User Name : '.$userName.'<br>
-				Display Name : '.$displayName.'<br>
-				Email  : '.$email.'<br>
-				Total Marks : '.$totalMarks.'<br>
-				Total Questions Attempted : '.$questionsAttempted.'<br>
+		echo '<br>
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>USER ID</th>
+      <th>User Name</th>
+      <th>Display Name</th>
+      <th>Email</th>
+      <th>Total Marks</th>
+      <th>Total Questions Attempted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>'.$id.'</td>
+      <td>'.$userName.'</td>
+      <td>'.$displayName.'</td>
+      <td>'.$email.'</td>
+      <td>'.$totalMarks.'</td>
+      <td>'.$questionsAttempted.'</td>
+    </tr>
+    
+  </tbody>
+</table> 
+<br>
+		';
+		//$numrows=$numrows+1;
+		// $row = array('userid' => $userId, 'credits'=>$credits,'type'=>$type);
+		// echo $row['userid'].$row['credits'].$row['type'];
+	}
 
+	
+	$stmt->close();
+	
+}
+function letsBuildUserProfile($id)
+{
+	$data = $id;
+	global $mysqli,$db_table_prefix; 
+	$stmt = $mysqli->prepare("SELECT 
+		id,
+		user_name,
+		display_name,
+		email,
+		total_marks,
+		questions_attempted
+        FROM ".$db_table_prefix."users
+		WHERE
+		id = ?
+		");
+		$stmt->bind_param("s", $data);
+	$numrows=0;
+	$stmt->execute();
+	$stmt->bind_result($id,$userName,$displayName,$email,$totalMarks,$questionsAttempted);
+	while ($stmt->fetch()){
+		echo '<br>
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      
+      <th>User Name</th>
+      <th>Display Name</th>
+      <th>Email</th>
+      <th>Total Marks</th>
+      <th>Total Questions Attempted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <td>'.$userName.'</td>
+      <td>'.$displayName.'</td>
+      <td>'.$email.'</td>
+      <td>'.$totalMarks.'</td>
+      <td>'.$questionsAttempted.'</td>
+    </tr>
+    
+  </tbody>
+</table> 
+<br>
 		';
 		//$numrows=$numrows+1;
 		// $row = array('userid' => $userId, 'credits'=>$credits,'type'=>$type);
@@ -1439,16 +1518,33 @@ function letsBuildLeaderBoard(){
 		
 	echo '
 	<br>
-	<p>Rank : '.$rankCounter.'</p><br>
-	<p>Username : '.$userName.'</p><br>
-	<p>Full Name : '.$displayName.'</p><br>
-	<p>Total Marks : '.$totalMarks.'</p><br>
-	<p>Questions Attempted : '.$questionsAttempted.'</p><br>
-	<p><a href = "userProfile.php?user_id='.$id.'">Click here to see profile...</a></p>
 	
-
-	<p>------------------------------------------------------------------------------<br>
-
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Rank</th>
+      <th>Username</th>
+      <th>Full Name</th>
+      <th>Total Marks</th>
+      <th>Questions Attempted</th>
+      <th>User Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>'.$id.'</td>
+      <td>'.$rankCounter.'</td>
+      <td>'.$userName.'</td>
+      <td>'.$displayName.'</td>
+	  <td>'.$totalMarks.'</td>
+	  <td>'.$questionsAttempted.'</td>
+	  <td><a href = "userProfile.php?user_id='.$id.'">Profile</a></td>
+    </tr>
+    
+  </tbody>
+</table> 
+<br>
 
 	';
 	$rankCounter=$rankCounter+1;

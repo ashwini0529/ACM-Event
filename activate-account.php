@@ -39,9 +39,8 @@ if(count($errors) == 0) {
 require_once("models/header.php");
 
 echo "
-<body>
-<div id='wrapper'>
-<div id='top'><div id='logo'></div></div>
+<div class='container'>
+
 <div id='content'>
 <h1> </h1>
 <h2>Activate Account</h2>

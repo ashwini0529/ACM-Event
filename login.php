@@ -92,7 +92,7 @@ include("left-nav.php");
 echo "
 </div>
 <div id='main'>
-<h2>Login</h2>";
+";
 
 echo resultBlock($errors,$successes);
 
@@ -100,24 +100,34 @@ echo "
 
 <div class='container' >
 
-<div id='regbox'  class='c-5'>
-<form name='login' class='wpcf7-form' action='".$_SERVER['PHP_SELF']."' method='post'>
-<p>
 
-<span class='wpcf7-form-control-wrap text'>	
-<label>User Name:</label><input type='text' 
-size='40' class='wpcf7-form-control wpcf7-text  c-12' aria-invalid='false' placeholder='Username' aria-required='true' name='username' /></span>
-</p>
-<p>
-<label>Password:</label>
-<input type='password' name='password' />
-</p>
-<p>
-<label>&nbsp;</label>
-<input  type='submit' value='Login' class='submit' />
-</p>
+<form class='form-horizontal' name='login'  action='".$_SERVER['PHP_SELF']."' method='post'>
+  <fieldset>
+    <legend>Login</legend>
+    <div class='form-group' >
+      <label for='inputEmail' class='col-lg-2 control-label'>User Name</label>
+      <div class='col-lg-10'>
+        <input type='text' class='form-control' type='text' 
+  placeholder='Username' aria-required='true' name='username'>
+      </div>
+    </div>
+    <div class='form-group'>
+      <label for='inputPassword' class='col-lg-2 control-label'>Password</label>
+      <div class='col-lg-10'>
+        <input type='password' class='form-control' name='password' placeholder='Password'>
+        
+      </div>
+    </div>
+   
+    <div class='form-group'>
+      <div class='col-lg-10 col-lg-offset-2'>
+       
+        <button type='submit' value='Login'  class='btn btn-primary'>Submit</button>
+      </div>
+    </div>
+  </fieldset>
 </form>
-</div>
+
 </div>
 </div>
 <div id='bottom'></div>

@@ -41,7 +41,7 @@ if(!isUserLoggedIn()) { header("Location: login.php"); die(); }
    }
 ?>
 <html>
-   <body>
+   <body class="col-lg-5 col-md-5 col-sm-5 col-xs-12" style='text-align:center;'">
       
       <form action="" method="POST" enctype="multipart/form-data">
          <input type="file" name="image" />

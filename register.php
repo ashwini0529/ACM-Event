@@ -96,32 +96,64 @@ echo resultBlock($errors,$successes);
 echo "
 <div class='container' >
  
-<h2>Register</h2>
-<div id='regbox'  class='c-5'>
-<form name='newUser' class='wpcf7-form' action='".$_SERVER['PHP_SELF']."' method='post'>
-
-<span class='wpcf7-form-control-wrap text-412'><input placeholder='User Name'size='40' class='wpcf7-form-control wpcf7-text required' type='text' name='username' /></span>
-
-<span class='wpcf7-form-control-wrap text-412'><input placeholder='Display Name' size='40' class='wpcf7-form-control wpcf7-text required' type='text' name='displayname' /></span>
-<span class='wpcf7-form-control-wrap text-412'><input placeholder='Password' size='40' class='wpcf7-form-control wpcf7-text required' type='password' name='password' /></span>
-
-<span class='wpcf7-form-control-wrap text-412'><input placeholder='Confirm Password' size='40' class='wpcf7-form-control wpcf7-text required' type='password' name='passwordc' /></span>
 
 
-<span class='wpcf7-form-control-wrap text-412'><input placeholder='Email' size='40' class='wpcf7-form-control wpcf7-text required' type='text' name='email' /></span>
-
-<label>Security Code:</label>
-<img src='models/captcha.php'>
-
-
-<span class='wpcf7-form-control-wrap text-412'><input placeholder='Enter Security Code' size='40' class='wpcf7-form-control wpcf7-text required' name='captcha' type='text'></span>
-
-<label>&nbsp;<br>
-<input type='submit' value='Register'/>
-
+<form class='form-horizontal' name='newUser'  action='".$_SERVER['PHP_SELF']."' method='post'>
+  <fieldset>
+    <legend>Register</legend>
+    <div class='form-group'>
+      <label for='inputEmail' class='col-lg-2 control-label'>User Name</label>
+      <div class='col-lg-10'>
+        <input type='text' class='form-control' type='text' 
+  placeholder='Username' aria-required='true' name='username'>
+      </div>
+    </div>
+    <div class='form-group'>
+      <label for='displayName' class='col-lg-2 control-label'>Display Name</label>
+      <div class='col-lg-10'>
+        <input  class='form-control' placeholder='Display Name'   type='text' name='displayname'>
+        
+      </div>
+    </div>
+    <div class='form-group'>
+      <label for='inputPassword' class='col-lg-2 control-label'>Password</label>
+      <div class='col-lg-10'>
+        <input type='password' class='form-control' name='password' placeholder='Password'>
+        
+      </div>
+    </div>
+    <div class='form-group'>
+      <label for='inputPassword' class='col-lg-2 control-label'>Confirm Password</label>
+      <div class='col-lg-10'>
+        <input type='password' class='form-control' name='passwordc' placeholder='Confirm Password'>
+        
+      </div>
+    </div>
+    <div class='form-group'>
+      <label for='inputPassword' class='col-lg-2 control-label'>Email</label>
+      <div class='col-lg-10'>
+        <input class='form-control' placeholder='Email'   type='text' name='email'>
+        
+      </div>
+    </div>
+    <div class='form-group'>
+      <label for='inputPassword' class='col-lg-2 control-label'>Security Code</label>
+      <img src='models/captcha.php'>
+      <div class='col-lg-10'>
+        <input class='form-control' placeholder='Enter Security Code'   name='captcha' type='text'>
+        
+      </div>
+    </div>
+    
+    <div class='form-group'>
+      <div class='col-lg-10 col-lg-offset-2'>
+        
+        <button value='Register' type='submit' class='btn btn-primary'>Submit</button>
+      </div>
+    </div>
+  </fieldset>
 </form>
-</div>
-</div>
+
 </div>
 
 

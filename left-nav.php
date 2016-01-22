@@ -9,44 +9,47 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 //Links for logged in user
 if(isUserLoggedIn()) {
 	echo "
-	<ul>
+	<div class='container'>
+	<ul class='nav nav-pills'>
 	<li><a href='account.php'>Account Home</a></li>
 	<li><a href='user_settings.php'>User Settings</a></li>
 	<li><a href='leaderboard.php'>Leaderboard</a></li>
 	<li><a href='userDashboard.php'>Dashboard</a></li>
 	
 	<li><a href='logout.php'>Logout</a></li>
-	</ul>";
+	</ul></div>";
 	
 	//Links for permission level 2 (default admin)
 	if ($loggedInUser->checkPermission(array(2))){
 	echo "
-	<ul>
-	<li class='btn small load-speaker-list'><i class='fa icon-caret-right'></i><a style='color:white' href='admin_configuration.php'>Admin Configuration</a></li>
-	<li class='btn small load-speaker-list'><i class='fa icon-caret-right'></i><a style='color:white' href='admin_users.php'>Admin Users</a></li>
-	<li class='btn small load-speaker-list'><i class='fa icon-caret-right'></i><a style='color:white' href='admin_permissions.php'>Admin Permissions</a></li>
-	<li class='btn small load-speaker-list'><i class='fa icon-caret-right'></i><a style='color:white' href='admin_pages.php'>Admin Pages</a></li>
-	<li class='btn small load-speaker-list'><i class='fa icon-caret-right'></i><a style='color:white' href='admin_addQuestion.php'>Add Question</a></li>
-	<li class='btn small load-speaker-list'><i class='fa icon-caret-right'></i><a style='color:white' href='admin_updateMarks.php'>Update marks</a></li>
+	<div class='container'>
+	<ul class='nav nav-pills'>
+	<li ><i class='fa icon-caret-right'></i><a  href='admin_configuration.php'>Admin Configuration</a></li>
+	<li ><i class='fa icon-caret-right'></i><a  href='admin_users.php'>Admin Users</a></li>
+	<li ><i class='fa icon-caret-right'></i><a  href='admin_permissions.php'>Admin Permissions</a></li>
+	<li ><i class='fa icon-caret-right'></i><a  href='admin_pages.php'>Admin Pages</a></li>
+	<li ><i class='fa icon-caret-right'></i><a  href='admin_addQuestion.php'>Add Question</a></li>
+	<li ><i class='fa icon-caret-right'></i><a  href='admin_updateMarks.php'>Update marks</a></li>
 	
 
-	</ul>";
+	</ul></div>";
 	}
 } 
 //Links for users not logged in
 else {
 	echo "
+	<div class='container'>
 	<ul class='nav nav-pills'>
-	<li  class='btn small load-speaker-list' ><i class='fa icon-caret-right'></i><a style='color:white' href='index.php'>Home</a></li>
-	<li  class='btn small load-speaker-list' ><i class='fa icon-caret-right'></i><a style='color:white' href='login.php'>Login</a></li>
-	<li  class='btn small load-speaker-list' ><i class='fa icon-caret-right'></i><a style='color:white' href='register.php'>Register</a></li>
-	<li  class='btn small load-speaker-list' ><i class='fa icon-caret-right'></i><a style='color:white' href='forgot-password.php'>Forgot Password</a></li>";
+	<li   ><i class='fa icon-caret-right'></i><a  href='index.php'>Home</a></li>
+	<li   ><i class='fa icon-caret-right'></i><a  href='login.php'>Login</a></li>
+	<li   ><i class='fa icon-caret-right'></i><a  href='register.php'>Register</a></li>
+	<li   ><i class='fa icon-caret-right'></i><a  href='forgot-password.php'>Forgot Password</a></li>";
 	
 	if ($emailActivation)
 	{
-	echo "<li  class='btn small load-speaker-list'><i class='fa icon-caret-right'></i><a style='color:white' href='resend-activation.php'>Resend Activation Email</a></li>";
+	echo "<li  ><i class='fa icon-caret-right'></i><a  href='resend-activation.php'>Resend Activation Email</a></li>";
 	}
-	echo "</ul>";
+	echo "</ul></div>";
 }
 
 ?>
