@@ -38,8 +38,9 @@ $lang = array_merge($lang,array(
 	"ACCOUNT_DETAILS_UPDATED"		=> "Account details updated",
 	"ACCOUNT_ACTIVATION_MESSAGE"		=> "You will need to activate your account before you can login. Please follow the link below to activate your account. \n\n
 	%m1%activate-account.php?token=%m2%",							
-	"ACCOUNT_ACTIVATION_COMPLETE"		=> "You have successfully activated your account. You can now login <a href=\"login.php\">here</a>.",
-	"ACCOUNT_REGISTRATION_COMPLETE_TYPE1"	=> "You have successfully registered. You can now login <a href=\"login.php\">here</a>.",
+	
+	//"ACCOUNT_ACTIVATION_COMPLETE"		=> "You have successfully activated your account. You can now login <a href=\"login.php\">here</a>.",
+	"ACCOUNT_REGISTRATION_COMPLETE_TYPE1"	=> "You have successfully registered. Go to <a href='http://www.acmvit.com'>Home</a>",
 	"ACCOUNT_REGISTRATION_COMPLETE_TYPE2"	=> "You have successfully registered. You will soon receive an activation email. 
 	You must activate your account before logging in.",
 	"ACCOUNT_PASSWORD_NOTHING_TO_UPDATE"	=> "You cannot update with the same password",

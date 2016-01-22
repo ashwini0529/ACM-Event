@@ -11,11 +11,6 @@ if(isUserLoggedIn()) {
 	echo "
 	<div class='container' >
 	<ul class='nav nav-pills' style='text-align:center'>
-	<li><a href='account.php'>Account Home</a></li>
-	<li><a href='user_settings.php'>User Settings</a></li>
-	<li><a href='leaderboard.php'>Leaderboard</a></li>
-	<li><a href='userDashboard.php'>Dashboard</a></li>
-	
 	<li><a href='logout.php'>Logout</a></li>
 	</ul></div>";
 	
@@ -29,7 +24,7 @@ if(isUserLoggedIn()) {
 	<li ><i class='fa icon-caret-right'></i><a  href='admin_permissions.php'>Admin Permissions</a></li>
 	<li ><i class='fa icon-caret-right'></i><a  href='admin_pages.php'>Admin Pages</a></li>
 	<li ><i class='fa icon-caret-right'></i><a  href='admin_addQuestion.php'>Add Question</a></li>
-	<li ><i class='fa icon-caret-right'></i><a  href='admin_updateMarks.php'>Update marks</a></li>
+	<li ><i class='fa icon-caret-right'></i><a  href='admin_updateMarks.php'>Update marks</a></li>	
 	
 
 	</ul></div>";
