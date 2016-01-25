@@ -102,10 +102,10 @@ echo "
   <fieldset>
     <legend style='text-align:center'>Register</legend>
     <div class='form-group'>
-      <label for='inputEmail' class='col-lg-2 control-label'>User Name</label>
+      <label for='inputEmail' class='col-lg-2 control-label'>Team Name</label>
       <div class='col-lg-10'>
         <input type='text' class='form-control' type='text' 
-  placeholder='Username' aria-required='true' name='username'>
+  placeholder='Please enter your team name(max 2 people in a team)' aria-required='true' name='username'>
       </div>
     </div>
     <div class='form-group'>
