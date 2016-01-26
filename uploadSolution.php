@@ -29,7 +29,7 @@ if(!isUserLoggedIn()) { header("Location: login.php"); die(); }
       }
       $fileNewName = $loggedInUser->user_id.'_'.$_GET['id'].'.'.$file_ext;
       if(empty($errors)==true){
-         move_uploaded_file($file_tmp,"uploadsJordie/".$fileNewName);
+         move_uploaded_file($file_tmp,"uploads/".$fileNewName);
          echo "Success";
          addUploadDetails($loggedInUser->user_id,$_GET['id']);
          updateTotalQuestionsAttempted($loggedInUser->user_id);
