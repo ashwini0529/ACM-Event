@@ -45,13 +45,9 @@ else {
 	<ul class='nav nav-pills'  style='text-align:center'>
 	<li  class='list-nav'  ><i class='fa icon-caret-right'></i><a  href='index.php'>Home</a></li>
 	<li   class='list-nav' ><i class='fa icon-caret-right'></i><a  href='login.php'>Login</a></li>
-	<li  class='list-nav'  ><i class='fa icon-caret-right'></i><a  href='register.php'>Register</a></li>
-	<li  class='list-nav'  ><i class='fa icon-caret-right'></i><a  href='forgot-password.php'>Forgot Password</a></li>";
+	<li  class='list-nav'  ><i class='fa icon-caret-right'></i><a  href='register.php'>Register</a></li>";
 	
-	if ($emailActivation)
-	{
-	echo "<li  class='list-nav' ><i class='fa icon-caret-right'></i><a  href='resend-activation.php'>Resend Activation Email</a></li>";
-	}
+	
 	echo "</ul>
 	</center></div>";
 }
