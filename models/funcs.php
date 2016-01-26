@@ -1218,6 +1218,7 @@ function fetchQuestions(){
 			question_type,
 			user_id
 			FROM ".$db_table_prefix."questions
+			ORDER BY id DESC
 			");
 		$stmt->execute();
 	$stmt->bind_result($id,$questionTitle,$questionDescription,$questionMarks,$questionType,$questionPostedBy);
