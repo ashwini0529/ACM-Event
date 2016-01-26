@@ -37,6 +37,5 @@ echo "
 
 echo '<div class="container"><h3>Questions : </h3></div>';
 fetchQuestions();
-include("leaderboard.php");
 
 ?>
