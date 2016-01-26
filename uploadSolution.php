@@ -53,7 +53,7 @@ if(!isUserLoggedIn()) { header("Location: login.php"); die(); }
          <div class='form-group'>
       <div class='col-lg-9 col-lg-offset-1'>
        
-        <button type='submit' value='Login'  class='btn '>Submit</button>
+        <input type="submit"/>
       </div>
     </div>
          
