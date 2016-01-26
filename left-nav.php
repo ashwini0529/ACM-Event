@@ -26,12 +26,12 @@ if(isUserLoggedIn()) {
 	<div class='container' >
 	<center>
 	<ul class='nav nav-pills' style='text-align:center'>
-	<li class='list-nav' ><i class='fa icon-caret-right'></i><a  href='admin_configuration.php'>Admin Configuration</a></li>
-	<li  class='list-nav'><i class='fa icon-caret-right'></i><a  href='admin_users.php'>Admin Users</a></li>
-	<li  class='list-nav'><i class='fa icon-caret-right'></i><a  href='admin_permissions.php'>Admin Permissions</a></li>
-	<li  class='list-nav'><i class='fa icon-caret-right'></i><a  href='admin_pages.php'>Admin Pages</a></li>
-	<li  class='list-nav'><i class='fa icon-caret-right'></i><a  href='admin_addQuestion.php'>Add Question</a></li>
-	<li  class='list-nav'><i class='fa icon-caret-right'></i><a  href='admin_updateMarks.php'>Update marks</a></li>
+	<li class='list-nav' ><a  href='admin_configuration.php'>Admin Configuration</a></li>
+	<li  class='list-nav'><a  href='admin_users.php'>Admin Users</a></li>
+	<li  class='list-nav'><a  href='admin_permissions.php'>Admin Permissions</a></li>
+	<li  class='list-nav'><a  href='admin_pages.php'>Admin Pages</a></li>
+	<li  class='list-nav'><a  href='admin_addQuestion.php'>Add Question</a></li>
+	<li  class='list-nav'><a  href='admin_updateMarks.php'>Update marks</a></li>
 	
 
 	</ul></center></div>";
@@ -43,9 +43,9 @@ else {
 	<div class='container'  >
 	<center>
 	<ul class='nav nav-pills'  style='text-align:center'>
-	<li  class='list-nav'  ><i class='fa icon-caret-right'></i><a  href='index.php'>Home</a></li>
-	<li   class='list-nav' ><i class='fa icon-caret-right'></i><a  href='login.php'>Login</a></li>
-	<li  class='list-nav'  ><i class='fa icon-caret-right'></i><a  href='register.php'>Register</a></li>";
+	<li  class='list-nav'  ><a  href='index.php'>Home</a></li>
+	<li   class='list-nav' ><a  href='login.php'>Login</a></li>
+	<li  class='list-nav'  ><a  href='register.php'>Register</a></li>";
 	
 	
 	echo "</ul>
