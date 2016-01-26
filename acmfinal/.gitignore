@@ -1,0 +1,6 @@
+
+#Files to ignore..
+
+/uploads/*
+/models/db-settings.php
+/models/config.php

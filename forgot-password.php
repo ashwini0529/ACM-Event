@@ -1,6 +1,6 @@
 <?php
 /*
-  Version: 2.0.2
+  Version: 3.0.2
 http:// .com
 */
 
@@ -195,24 +195,24 @@ echo "
   <fieldset>
     <legend>Forgot Password</legend>
     <div class='form-group'>
-      <label for='inputEmail' class='col-lg-2 control-label'>User Name</label>
-      <div class='col-lg-10'>
+      <label for='inputEmail' class='col-lg-3 control-label'>User Name</label>
+      <div class='col-lg-9'>
         <input type='text' class='form-control' type='text' 
   placeholder='Username' aria-required='true' name='username'>
       </div>
     </div>
     <div class='form-group'>
-      <label for='inputPassword' class='col-lg-2 control-label'>Email</label>
-      <div class='col-lg-10'>
+      <label for='inputPassword' class='col-lg-3 control-label'>Email</label>
+      <div class='col-lg-9'>
         <input class='form-control' placeholder='Email'   type='text' name='email'>
         
       </div>
     </div>
     
     <div class='form-group'>
-      <div class='col-lg-10 col-lg-offset-2'>
+      <div class='col-lg-offset-3'>
         
-        <button value='Submit' type='submit' class='btn btn-primary'>Submit</button>
+        <button value='Submit' type='submit' class='btn'>Submit</button>
       </div>
     </div>
   </fieldset>

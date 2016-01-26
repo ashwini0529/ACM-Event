@@ -42,8 +42,8 @@ echo "
 <div class='container'>
 
 <div id='content'>
-<h1> </h1>
-<h2>Activate Account</h2>
+<center>
+<h2>Activate Account</h2></center>
 
 <div id='left-nav'>";
 

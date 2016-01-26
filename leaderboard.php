@@ -17,25 +17,36 @@ echo "
 <div id='wrapper'>
 
 <div id='content'>
-<h1>ACM EVENT</h1>
-<h2>Account</h2>
-<div id='left-nav'>";
-
-include("left-nav.php");
-echo "
+<center>
+<h2>Account</h2></center>
 </div>
 <div id='bottom'></div>
 </div>
-
-
-";
-
+<div class='ccontainer'>
+	<table class='table table-striped table-hover table-responsive table-condensed '>
+  <thead>
+    <tr>
+      
+      <th>Rank</th>
+      <th>Username</th>
+      <th>Full Name</th>
+      <th>Total Marks</th>
+      <th>Questions Attempted</th>
+      <th>User Profile</th>
+    </tr>
+  </thead>
+  <tbody>";
 letsBuildLeaderBoard();
-
 echo "
+    
+  </tbody>
+</table> 
+</div>
+</div>
+<br>
 </body>
 </html>";
-
+	
 
 
 ?>

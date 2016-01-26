@@ -1225,6 +1225,9 @@ function fetchQuestions(){
 
 		
 	echo '
+	<div class ="container">
+	<div class="row">
+	<div class="col-lg-9 col-md-9 col-sm-12">
 	<br><div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">'.$questionTitle.'</h3>
@@ -1236,6 +1239,9 @@ function fetchQuestions(){
 	Question Posted By : '.$questionPostedBy.'</p><br>
 	<a href = "uploadSolution.php?id='.$id.'">Click here for details</a>
   </div>
+</div>
+</div>
+</div>
 </div>
 <br>
 	
@@ -1271,13 +1277,21 @@ function fetchQuestionDetails($id)
 	$stmt->execute();
 	$stmt->bind_result($id,$questionTitle,$questionDescription,$questionMarks,$questionType,$questionAskedBy);
 	while ($stmt->fetch()){
-		echo '
-				ID: '.$id.'<br>
-				Question Title : '.$questionTitle.'<br>
-				Question description: '.$questionDescription.'<br>
-				Question Marks : '.$questionMarks.'<br>
-				Question Type : '.$questionType.'<br>
-				Question asked By : '.$questionAskedBy.'<br>
+		echo '<div class ="container">
+	<div class="row">
+	<div class="col-lg-9 col-md-9 col-sm-12">
+	<br><div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">'.$questionTitle.'</h3>
+  </div>
+				 <div class="panel-body">
+    <b>Question Description : </b>'.$questionDescription.'</p><br>
+	<b>Question Marks :</b> '.$questionMarks.'</p><br>
+	<b>Question Type : </b>'.$questionType.'</p><br>
+  </div>
+</div>
+</div>
+</div>
 		';
 		//$numrows=$numrows+1;
 		// $row = array('userid' => $userId, 'credits'=>$credits,'type'=>$type);
@@ -1310,32 +1324,21 @@ function letsBuildUserDashboard($id)
 	$stmt->execute();
 	$stmt->bind_result($id,$userName,$displayName,$email,$totalMarks,$questionsAttempted);
 	while ($stmt->fetch()){
-		echo '<br>
-<table class="table table-striped table-hover ">
-  <thead>
-    <tr>
-      <th>USER ID</th>
-      <th>User Name</th>
-      <th>Display Name</th>
-      <th>Email</th>
-      <th>Total Marks</th>
-      <th>Total Questions Attempted</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>'.$id.'</td>
-      <td>'.$userName.'</td>
-      <td>'.$displayName.'</td>
-      <td>'.$email.'</td>
-      <td>'.$totalMarks.'</td>
-      <td>'.$questionsAttempted.'</td>
-    </tr>
-    
-  </tbody>
-</table> 
-<br>
-		';
+		echo '<div class ="container">
+		<div class="col-lg-8 col-md-8 col-sm-12"><h1 >User Details</h1><br>
+		<div class="panel panel-info">
+
+  <div class="panel-heading">
+    <h3 class="panel-default">'.$displayName.'</h3>
+  </div>
+  <div class="panel-body">
+  <br><b>User Id</b>: '.$id.'
+    <br><b>User Name</b>: '.$userName.'
+			<br><b>Email</b>: '.$email.'
+			<br><b>Username</b>: '.$email.'
+			<br><b>Total Marks</b>: '.$totalMarks.'
+			<br><b>Questions Attempted</b> '.$questionsAttempted;
+			'</div></div></div>';
 		//$numrows=$numrows+1;
 		// $row = array('userid' => $userId, 'credits'=>$credits,'type'=>$type);
 		// echo $row['userid'].$row['credits'].$row['type'];
@@ -1365,31 +1368,19 @@ function letsBuildUserProfile($id)
 	$stmt->execute();
 	$stmt->bind_result($id,$userName,$displayName,$email,$totalMarks,$questionsAttempted);
 	while ($stmt->fetch()){
-		echo '<br>
-<table class="table table-striped table-hover ">
-  <thead>
-    <tr>
-      
-      <th>User Name</th>
-      <th>Display Name</th>
-      <th>Email</th>
-      <th>Total Marks</th>
-      <th>Total Questions Attempted</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      
-      <td>'.$userName.'</td>
-      <td>'.$displayName.'</td>
-      <td>'.$email.'</td>
-      <td>'.$totalMarks.'</td>
-      <td>'.$questionsAttempted.'</td>
-    </tr>
-    
-  </tbody>
-</table> 
-<br>
+		echo ' <div class="col-lg-8 col-md-8 col-sm-12"><h1 >User Details</h1><br>
+		<div class="panel panel-primary">
+
+  <div class="panel-heading">
+    <h3 class="panel-default">'.$displayName.'</h3>
+  </div>
+  <div class="panel-body">
+    <b>User Name</b>: '.$userName.'
+			<br><b>Display Name</b>: '.$displayName.'
+			<br><b>Email</b>: '.$email.'
+			<br><b>Total Marks</b>: '.$totalMarks.'
+			<br><b>Total Questions Attempted</b>: '.$questionsAttempted.'
+  
 		';
 		//$numrows=$numrows+1;
 		// $row = array('userid' => $userId, 'credits'=>$credits,'type'=>$type);
@@ -1517,36 +1508,14 @@ function letsBuildLeaderBoard(){
 
 		
 	echo '
-	<br>
-	
-<table class="table table-striped table-hover ">
-  <thead>
     <tr>
-      <th>#</th>
-      <th>Rank</th>
-      <th>Username</th>
-      <th>Full Name</th>
-      <th>Total Marks</th>
-      <th>Questions Attempted</th>
-      <th>User Profile</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>'.$id.'</td>
       <td>'.$rankCounter.'</td>
       <td>'.$userName.'</td>
       <td>'.$displayName.'</td>
 	  <td>'.$totalMarks.'</td>
 	  <td>'.$questionsAttempted.'</td>
 	  <td><a href = "userProfile.php?user_id='.$id.'">Profile</a></td>
-    </tr>
-    
-  </tbody>
-</table> 
-<br>
-
-	';
+    </tr>';
 	$rankCounter=$rankCounter+1;
 }
 	$stmt->close();

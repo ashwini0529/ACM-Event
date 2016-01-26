@@ -13,6 +13,6 @@ if(!isUserLoggedIn()) { header("Location: login.php"); die(); }
     $userId= $_GET['user_id'];
     letsBuildUserProfile($userId);
     $userRank = getUserRank($userId);
-    echo 'Rank = '.$userRank;
+    echo '<div class="well well-sm">Rank = '.$userRank.'</div></div></div>';
     
 ?>

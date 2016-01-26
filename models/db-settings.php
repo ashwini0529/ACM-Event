@@ -8,7 +8,7 @@ http:// .com
 $db_host = "localhost"; //Host address (most likely localhost)
 $db_name = "event"; //Name of Database
 $db_user = "root"; //Name of database user
-$db_pass = "HALFpast12"; //Password for database user
+$db_pass = ""; //Password for database user
 $db_table_prefix = "acm_";
 
 GLOBAL $errors;

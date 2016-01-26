@@ -10,7 +10,10 @@ if(!isUserLoggedIn()) { header("Location: login.php"); die(); }
 
 
     // Build User Dashboard...
+    echo '
+  
+  ';
     letsBuildUserDashboard($loggedInUser->user_id);
     $userRank = getUserRank($loggedInUser->user_id);
-    echo '<b>Rank</b> = '.$userRank;
+    echo '<div class="well well-sm">Rank = '.$userRank.'</div>';
     

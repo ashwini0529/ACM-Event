@@ -103,26 +103,26 @@ echo "
 
 <form class='form-horizontal' name='login'  action='".$_SERVER['PHP_SELF']."' method='post'>
   <fieldset>
-    <legend>Login</legend>
+    <center><legend>Login</legend></center>
     <div class='form-group' >
-      <label for='inputEmail' class='col-lg-2 control-label'>User Name</label>
-      <div class='col-lg-10'>
+      <label for='inputEmail' class='col-lg-3 control-label'>User Name</label>
+      <div class='col-lg-9'>
         <input type='text' class='form-control' type='text' 
   placeholder='Username' aria-required='true' name='username'>
       </div>
     </div>
     <div class='form-group'>
-      <label for='inputPassword' class='col-lg-2 control-label'>Password</label>
-      <div class='col-lg-10'>
+      <label for='inputPassword' class='col-lg-3 control-label'>Password</label>
+      <div class='col-lg-9'>
         <input type='password' class='form-control' name='password' placeholder='Password'>
         
       </div>
     </div>
    
     <div class='form-group'>
-      <div class='col-lg-10 col-lg-offset-2'>
+      <div class='col-lg-9 col-lg-offset-3'>
        
-        <button type='submit' value='Login'  class='btn btn-primary'>Submit</button>
+        <button type='submit' value='Login'  class='btn '>Submit</button>
       </div>
     </div>
   </fieldset>

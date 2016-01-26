@@ -114,43 +114,44 @@ echo "
 echo resultBlock($errors,$successes);
 
 echo "
-<div class=;container'>
+<div class='container'>
+
 <form class='form-horizontal' name='updateAccount' action='".$_SERVER['PHP_SELF']."' method='post'>
   <fieldset>
-    <legend>User Settings</legend>
+    <center><legend>User Settings</legend></center>
  
     <div class='form-group'>
-      <label for='inputPassword' class='col-lg-2 control-label'>Password</label>
-      <div class='col-lg-10'>
+      <label for='inputPassword' class='col-lg-3 col-md-3  control-label'>Password</label>
+      <div class='col-lg-9 col-md-9'>
         <input type='password' class='form-control' name='password' placeholder='Password'>
         
       </div>
     </div>
     <div class='form-group'>
-      <label for='inputPassword' class='col-lg-2 control-label'>Email</label>
-      <div class='col-lg-10'>
+      <label for='inputPassword' class='col-lg-3 col-md-3  control-label'>Email</label>
+      <div class='col-lg-9 col-md-9'>
         <input class='form-control' placeholder='Email' value='".$loggedInUser->email."'  type='text' name='email'>
         
       </div>
     </div>
     <div class='form-group'>
-      <label for='inputPassword' class='col-lg-2 control-label'>New Password</label>
-      <div class='col-lg-10'>
+      <label for='inputPassword' class='col-lg-3 col-md-3  control-label'>New Password</label>
+      <div class='col-lg-9 col-md-9'>
         <input type='password' class='form-control' name='passwordc' placeholder='New Password'>
         
       </div>
     </div>
     <div class='form-group'>
-      <label for='inputPassword' class='col-lg-2 control-label'>Confirm Password</label>
-      <div class='col-lg-10'>
+      <label for='inputPassword' class='col-lg-3 col-md-3  control-label'>Confirm Password</label>
+      <div class='col-lg-9 col-md-9'>
         <input type='password' class='form-control'  name='passwordcheck' placeholder='Confirm Password'>
         
       </div>
     </div>
     <div class='form-group'>
-      <div class='col-lg-10 col-lg-offset-2'>
+      <div class='col-md-offset-3 col-lg-offset-3'>
         
-        <button value='Update' type='submit' class='btn btn-primary'>Submit</button>
+        <button value='Update' type='submit' class='btn ='>Submit</button>
       </div>
     </div>
   </fieldset>

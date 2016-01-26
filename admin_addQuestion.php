@@ -27,8 +27,7 @@ echo "
 <body>
 <div id='wrapper'>
 
-<div id='content'>
-<h1>ACM EVENT</h1>
+<div id='content' class='container'>
 <h2>Account</h2>
 <div id='left-nav'>";
 
@@ -41,6 +40,7 @@ echo "
 </html>";
 
 ?>
+<div class="container">
 <form method = "POST" action = "admin_addQuestion.php" name= "AddQuestion">
 <h3>Add Question</h3>
 <p>Question Title : <input type = "text" name = "title">	</p>
@@ -55,5 +55,5 @@ echo "
 <?php
 
 }
-else echo 'Sorry . You are not the administrator of the site.. Your IP is traced.';
+else echo 'Sorry . You are not the administrator of the site.. Your IP is traced.</div>';
 ?>

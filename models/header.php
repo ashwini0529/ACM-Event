@@ -20,8 +20,7 @@ echo "
 
    <!-- Optional theme -->
    <link rel='stylesheet' href='bootstrap/css/bootstrap-theme.min.css'type='text/css'>
-
-  <link rel='stylesheet' href='path/to/font-awesome/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
 <link href=''.$template.'' rel='stylesheet' type='text/css' />
 <link href='models/site-templates/default.css' rel='stylesheet' type='text/css' />
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -35,7 +34,8 @@ echo "
 <body style='background:'>
 <div id='wrapper' class='container'>
 <div id='top' class='col-sm-12 col-xs-12 col-md-12 col-lg-12' style='text-align:center'>
-<img src='Website/logo.png' class='image-responsive' style='max-width:10%;margin:auto;'>
+<img src='Website/logo.png' style='max-width:10%;margin:auto;'><br>
+<img src='Website/codart.png' class='image-responsive' style='max-width:40%;margin:auto;'>
     <h1 class='uppercase'>
     Welcome to <b> 	CoDart. </b> </h1> 
     <br>

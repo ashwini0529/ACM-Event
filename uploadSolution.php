@@ -8,7 +8,6 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 if(!isUserLoggedIn()) { header("Location: login.php"); die(); }
 
     require_once("models/header.php");
-    echo '<h3>Hey, '.$loggedInUser->username.'</h3>';
     $questionId = $_GET['id'];
     fetchQuestionDetails($_GET['id']);
    if(isset($_FILES['image'])){
@@ -34,19 +33,33 @@ if(!isUserLoggedIn()) { header("Location: login.php"); die(); }
          echo "Success";
          addUploadDetails($loggedInUser->user_id,$_GET['id']);
          updateTotalQuestionsAttempted($loggedInUser->user_id);
-         echo '<br>Total Questions attempted increased in users table..';
+         echo '<br>Total Questions attempted increased in users table..</div>';
       }else{
          print_r($errors);
       }
    }
 ?>
 <html>
-   <body class="col-lg-5 col-md-5 col-sm-5 col-xs-12" style='text-align:center;'">
-      
-      <form action="" method="POST" enctype="multipart/form-data">
-         <input type="file" name="image" />
-         <input type="submit"/>
+   <body >
+      <div class="container"> 
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12" style='text-align:center;'>
+        
+      <form class='form-horizontal' action="" method="POST" enctype="multipart/form-data">
+      <fieldset>
+          <center><legend>Upload Question</legend></center>
+         <div class='form-group' >
+         <input class="form-control"type="file" name="image" />
+         </div>
+         <div class='form-group'>
+      <div class='col-lg-9 col-lg-offset-1'>
+       
+        <button type='submit' value='Login'  class='btn '>Submit</button>
+      </div>
+    </div>
+         
       </form>
+        </div>
+      </fieldset>
       
    </body>
 </html>

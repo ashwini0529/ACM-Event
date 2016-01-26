@@ -15,8 +15,8 @@ echo "
 <div id='wrapper'>
 <div id='top'><div id='logo'></div></div>
 <div id='content'>
-<h1> </h1>
-<h2>Account</h2>
+<center>
+<h2 class='uppercase'>Account</h2></center>
 <div id='left-nav'>";
 
 include("left-nav.php");
@@ -25,17 +25,18 @@ echo "
 </div>
 
 <div class='container'>
-Hey, $loggedInUser->displayname. </div>
+<div class='well well-lg'>Hey, $loggedInUser->displayname.</div>
 
 <div id='bottom'></div>
 </div>
 
 
-</body class='home page page-id-755 page-template page-template-unlimited-page page-template-unlimited-page-php wpb-js-composer js-comp-ver-4.8.1 vc_responsive'>
+</body>
 </html>";
 
 
-//echo '<h3>Questions : </h3>';
-//fetchQuestions();
+echo '<div class="container"><h3>Questions : </h3></div>';
+fetchQuestions();
+include("leaderboard.php");
 
 ?>
