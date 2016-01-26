@@ -27,7 +27,7 @@ if(!empty($websiteUrl))
 }
 else
 {
-	header("Location: http://acmvit.com);
+	header("Location: http://".$_SERVER['HTTP_HOST']);
 	die();
 }	
 
