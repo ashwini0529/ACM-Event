@@ -1237,7 +1237,6 @@ function fetchQuestions(){
     Question Description : '.$questionDescription.'</p><br>
 	Question Marks : '.$questionMarks.'</p><br>
 	Question Type : '.$questionType.'</p><br>
-	Question Posted By : '.$questionPostedBy.'</p><br>
 	<a href = "uploadSolution.php?id='.$id.'">Click here for details</a>
   </div>
 </div>
