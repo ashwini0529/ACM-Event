@@ -7,9 +7,14 @@ http:// .com
 require_once("models/config.php");
 if (!securePage($_SERVER['PHP_SELF'])){die();}
 require_once("models/header.php");
-
-
-
+echo "
+<div class='panel-heading'>
+    <h3 class='panel-default'>Notice</h3>
+  </div>
+  <div class='panel-body'>
+    <b>The leaderboard will be updated at 12 PM. We will keep on updating marks soon.</b>
+    </div>
+";
 
 echo "
 
