@@ -31,10 +31,9 @@ if(!isUserLoggedIn()) { header("Location: login.php"); die(); }
       $fileNewName = $loggedInUser->user_id.'_'.$_GET['id'].'.'.$file_ext;
       if(empty($errors)==true){
          move_uploaded_file($file_tmp,"uploadsJordie/".$fileNewName);
-         echo "Success";
+         echo "Congratulations!!! Solution Successfully Uploaded.";
          addUploadDetails($loggedInUser->user_id,$_GET['id']);
          updateTotalQuestionsAttempted($loggedInUser->user_id);
-         echo '<br>Total Questions attempted increased in users table..';
       }else{
          print_r($errors);
       }
