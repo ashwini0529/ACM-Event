@@ -1496,7 +1496,7 @@ function letsBuildLeaderBoard(){
 			FROM ".$db_table_prefix."users
 			ORDER BY total_marks
 		    DESC
-		    LIMIT 20
+		
 			");
 		$stmt->execute();
 
