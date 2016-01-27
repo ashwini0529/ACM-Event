@@ -25,6 +25,7 @@ echo "
 </div>
 
 <div class='container'>
+<div class='well well-lg'>Please update your details  <a href = 'detailsForm.php'> here</a> . Updating your information is very important.</div>
 <div class='well well-lg'>Hey! We have a surprise for you. Be there at 10 PM!</div>
 
 <div id='bottom'></div>
