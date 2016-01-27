@@ -1570,5 +1570,18 @@ function getUserRank($userId){
 	return $rankCounter;
 }
 
-
+//Function to update details
+function updateUserProfileDetails($regno,$contact,$userId)
+{
+	global $mysqli,$db_table_prefix;
+	$stmt = $mysqli->prepare("UPDATE ".$db_table_prefix."users
+		SET regno = ?, contact = ?
+		WHERE
+		id = ?
+		");
+	$stmt->bind_param("ssi", $regno, $contact,$userId);
+	$result = $stmt->execute();
+	$stmt->close();
+	return $result;
+}
 ?>
