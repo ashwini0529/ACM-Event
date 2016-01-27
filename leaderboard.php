@@ -12,7 +12,7 @@ echo "
     <h3 class='panel-default'>Notice</h3>
   </div>
   <div class='panel-body'>
-    <b>The leaderboard will be updated at 12 PM. We will keep on updating marks soon.</b>
+    <b>All the codes are evaluated. This is the final result.</b>
     </div>
 ";
 
