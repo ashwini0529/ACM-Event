@@ -25,7 +25,7 @@ echo "
 </div>
 
 <div class='container'>
-<div class='well well-lg'>Hey, $loggedInUser->displayname.</div>
+<div class='well well-lg'>Hey! We have a surprise for you. Be there at 9!</div>
 
 <div id='bottom'></div>
 </div>
